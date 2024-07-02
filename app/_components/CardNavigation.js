@@ -1,25 +1,19 @@
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaSquarePersonConfined,
-} from "react-icons/fa6";
-import { SiGmail } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaSquarePersonConfined } from "react-icons/fa6";
 import { GrProjects } from "react-icons/gr";
+import { IoSettingsSharp } from "react-icons/io5";
 import {
   RiContactsBook3Line,
-  RiListSettingsFill,
   RiInstagramFill,
+  RiListSettingsFill,
 } from "react-icons/ri";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
-import { IoSettingsSharp } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
 
 import Circles from "./Circles";
 
 function CardNavigation() {
   return (
-    <div className="min-w-[22vw] min-h-[65vh] bg-primary-50 rounded-md">
-      <Circles />
+    <div className="min-w-[22vw] min-h-[66vh] bg-primary-50 rounded-md">
+      <Circles left="bg-[#74CE95]" middle="bg-[#F0CB51]" right="bg-[#DA6F6F]" />
 
       <div className="text-primary-900 px-6 flex flex-col gap-1">
         <h3 className="font-semibold text-lg">Socials</h3>

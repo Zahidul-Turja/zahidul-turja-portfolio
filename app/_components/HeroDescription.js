@@ -6,8 +6,8 @@ import { IoIosSend } from "react-icons/io";
 function HeroDescription() {
   return (
     <div className="h-full max-w-[40vw]">
-      <div className="welcome-box py-2 px-4 border border-[#7042f88b] opacity-90">
-        <SparklesIcon className="text-[#b49bff] mr-3 h-5 w-5" />
+      <div className="welcome-box py-2 px-4 border border-secondary-800 opacity-90">
+        <SparklesIcon className="text-secondary-600 mr-3 h-5 w-5" />
         <h3>Hey there 👋, I&apos;m</h3>
       </div>
       <h1 className="text-6xl font-semibold mt-5">
@@ -25,7 +25,7 @@ function HeroDescription() {
       </p>
 
       <div className="cursor-pointer transition-all hover:opacity-90 hover:translate-y-[-3px] active:translate-y-0 inline-block">
-        <a className="px-5 py-3 text-center text-lg font-semibold bg-[#7042f88b] rounded-lg cursor-pointer">
+        <a className="px-6 py-3.5 text-center text-lg font-semibold bg-secondary-800 rounded-lg cursor-pointer">
           Send a message <IoIosSend className="inline text-xl ml-2" />
         </a>
       </div>
