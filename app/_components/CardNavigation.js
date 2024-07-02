@@ -59,7 +59,7 @@ function CardNavigation() {
           href="#"
           className="pl-6 py-1 flex items-center gap-3 w-full rounded transition-all hover:bg-slate-300"
         >
-          <RiListSettingsFill className="inline-block scale-125" /> Skills
+          <RiListSettingsFill className="inline-block scale-125" /> Tech Stack
         </a>
         <a
           href="#"

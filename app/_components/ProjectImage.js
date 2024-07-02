@@ -7,7 +7,7 @@ function ProjectImage() {
       <Image
         src="/wild-oasis-client.png"
         fill
-        className="object-cover rounded-lg transition-all hover:-translate-x-[0.1rem] hover:-translate-y-1"
+        className="object-cover rounded-lg"
         alt="project-cover"
       />
     </div>

@@ -25,6 +25,10 @@ function ProjectDetails() {
           right="bg-[#DA6F6F]"
         />
       </div>
+
+      <h1 className="text-3xl font-semibold mt-20 text-secondary-600">
+        Phuc Mai&apos;s Project Scroll animation in Display Image
+      </h1>
     </div>
   );
 }
