@@ -1,6 +1,6 @@
 function ProjectCard({ children }) {
   return (
-    <div className="w-[85vw] flex gap-[5vw] mx-auto my-16">{children}</div>
+    <div className="mx-auto my-16 flex w-[85vw] gap-[5vw]">{children}</div>
   );
 }
 

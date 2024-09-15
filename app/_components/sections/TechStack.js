@@ -15,54 +15,55 @@ import { TbBrandRedux } from "react-icons/tb";
 
 function TechStack() {
   return (
-    <div className="w-full h-[30rem] my-12 bg-slate-100 px-[10vw] flex items-center justify-between gap-16">
-      <h1 className="h-[10rem] w-[10rem]  text-primary-50 text-3xl bg-slate-950 rounded-full justify-center items-center flex font-semibold">
+    <div className="my-12 flex w-full flex-col items-center justify-between px-[10vw]">
+      <h2 className="my-10 text-4xl font-bold">Teck Stack</h2>
+      {/* <h1 className="flex h-[10rem] w-[10rem] items-center justify-center rounded-full bg-slate-950 text-3xl font-semibold text-primary-50">
         Tech <br />
         Stack
-      </h1>
+      </h1> */}
       {/* <div className="w-[80%] grid grid-cols-8 items-center justify-between"> */}
-      <div className="w-[75%] flex flex-wrap gap-8 justify-center">
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <RiNextjsLine className="text-primary-900 text-5xl" />
+      <div className="flex w-[75%] flex-wrap justify-center gap-8">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <RiNextjsLine className="text-5xl text-primary-900" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <FaReact className="text-[#5ED3F3] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <FaReact className="text-5xl text-[#5ED3F3]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiReactquery className="text-[#FF4154] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiReactquery className="text-5xl text-[#FF4154]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <TbBrandRedux className="text-[#7248B6] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <TbBrandRedux className="text-5xl text-[#7248B6]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiExpress className="text-primary-900 text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiExpress className="text-5xl text-primary-900" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <IoLogoNodejs className="text-[#428A3C] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <IoLogoNodejs className="text-5xl text-[#428A3C]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiMongodb className="text-[#428A3C] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiMongodb className="text-5xl text-[#428A3C]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <RiTailwindCssFill className="text-[#13B9B3] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <RiTailwindCssFill className="text-5xl text-[#13B9B3]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiChakraui className="text-[#4FD1C5] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiChakraui className="text-5xl text-[#4FD1C5]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiSupabase className="text-[#2D7555] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiSupabase className="text-5xl text-[#2D7555]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiMysql className="text-[#00718B] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiMysql className="text-5xl text-[#00718B]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <FaFigma className="text-secondary-800 text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <FaFigma className="text-5xl text-secondary-800" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiDjango className="text-[#092D1F] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiDjango className="text-5xl text-[#092D1F]" />
         </div>
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center shadow-md shadow-primary-900/30">
-          <SiTensorflow className="text-[#F77500] text-5xl" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30">
+          <SiTensorflow className="text-5xl text-[#F77500]" />
         </div>
       </div>
     </div>

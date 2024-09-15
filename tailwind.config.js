@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "white-glow": "0 0 20px 5px rgba(255, 255, 255, 0.2)", // Glowing white shadow
+        "purple-glow": "0 0 20px 5px rgba(191, 151, 255, 0.2)", // Glowing white shadow
+      },
       colors: {
         primary: {
           50: "#E1E8EF",
@@ -28,5 +32,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

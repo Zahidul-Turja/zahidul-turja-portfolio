@@ -4,8 +4,8 @@ import ProjectImage from "../ProjectImage";
 
 function Projects() {
   return (
-    <div className="w-full py-14 text-center">
-      <h2 className="text-3xl font-bold my-8">Projects</h2>
+    <div className="w-full py-14">
+      <h2 className="my-8 text-center text-4xl font-bold">Projects</h2>
 
       <ProjectCard>
         <ProjectImage />
