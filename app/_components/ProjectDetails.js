@@ -14,7 +14,7 @@ import ProjectLinks from "./ProjectLinks";
 
 function ProjectDetails() {
   return (
-    <div className="shadow-white-glow min-h-[52vh] w-[50%] rounded-lg bg-primary-900">
+    <div className="min-h-[52vh] w-[50%] rounded-lg bg-primary-900 shadow-white-glow">
       <div className="flex items-center justify-between">
         <div className="mb-1 ml-6 mt-5 flex items-center gap-4">
           <RiNextjsFill />
@@ -33,7 +33,7 @@ function ProjectDetails() {
         />
       </div>
 
-      <div className="mx-auto my-2 h-[80%] w-[92%] rounded-md border border-primary-50 bg-primary-950">
+      <div className="mx-auto my-2 h-[78%] w-[92%] rounded-md border border-primary-50 bg-primary-950">
         <div className="title py-2 text-center text-xl font-semibold">
           The Wild Oasis
         </div>

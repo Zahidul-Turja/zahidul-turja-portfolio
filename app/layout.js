@@ -13,8 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/z-logo-circle.svg" sizes="any" />
+      </head>
       <body
-        className={`${inter.className} antialiased bg-primary-950 text-primary-100 min-h-screen overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className} min-h-screen overflow-x-hidden overflow-y-scroll bg-primary-950 text-primary-100 antialiased`}
       >
         <StarsCanvas />
         <Navbar />
