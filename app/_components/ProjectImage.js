@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-function ProjectImage() {
+function ProjectImage({ image }) {
   return (
     <div className="relative mr-3 h-[50vh] w-[40%]">
-      <div className="shadow-purple-glow absolute inset-0 translate-x-3 translate-y-3 rounded-lg bg-secondary-800"></div>
+      <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-lg bg-secondary-800 shadow-purple-glow"></div>
       <Image
-        src="/wild-oasis-client.png"
+        src={image}
         fill
-        className="shadow-purple-glow rounded-lg object-cover"
+        className="rounded-lg object-cover shadow-purple-glow"
         alt="project-cover"
       />
     </div>

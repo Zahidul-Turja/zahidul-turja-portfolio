@@ -6,34 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MdArrowOutward } from "react-icons/md";
 import Link from "next/link";
 
-gsap.registerPlugin(ScrollTrigger);
+import { BlogItems as items } from "@/public/data/data";
 
-const items = [
-  {
-    id: "blog-1",
-    title: "useState in React",
-    tags: ["React.js", "Next.js", "Frontend"],
-    image: "avatar-01.jpg",
-  },
-  {
-    id: "Bug in React Due to Closure",
-    title: "Example of A Closure Error in React",
-    tags: ["useState", "React.js", "Closure"],
-    image: "wild-oasis-client.png",
-  },
-  {
-    id: "blog-3",
-    title: "React Query",
-    tags: ["React.js", "Next.js", "Tenstack"],
-    image: "avatar-01.jpg",
-  },
-  {
-    id: "blog-4",
-    title: "Hooks in React",
-    tags: ["React.js", "Next.js", "Hooks"],
-    image: "avatar-01.jpg",
-  },
-];
+gsap.registerPlugin(ScrollTrigger);
 
 function Blogs() {
   const component = useRef(null);
@@ -44,7 +19,7 @@ function Blogs() {
   const [hovering, setHovering] = useState(false);
   const lastMousePos = useRef({ x: 0, y: 0 });
 
-  const urlPrefix = "/blog"; // Assuming it's always for blogs now
+  const urlPrefix = "/blogs"; // Assuming it's always for blogs now
 
   useEffect(() => {
     // Animate list items with a stagger effect
