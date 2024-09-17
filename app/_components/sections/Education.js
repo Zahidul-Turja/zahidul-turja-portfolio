@@ -2,6 +2,9 @@
 
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Education() {
   const component = useRef(null);
@@ -10,6 +13,26 @@ function Education() {
   useEffect(() => {
     // Animate list items with a stagger effect
     let ctx = gsap.context(() => {
+      const tl = gsap.timeline();
+
+      // Animation for the title (slide up from bottom with opacity fade in)
+      tl.fromTo(
+        ".title",
+        { opacity: 0, y: 50 }, // Start from y: 50 (below) and opacity 0
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.5, // Adjusted duration for smoother transition
+          ease: "power3.out", // Smooth easing
+          scrollTrigger: {
+            trigger: ".title",
+            start: "top 80%", // Adjusted start position for better visibility
+            end: "bottom 60%",
+            toggleActions: "play none none none",
+          },
+        },
+      );
+
       itemRef.current.forEach((item, index) => {
         gsap.fromTo(
           item,
@@ -36,7 +59,9 @@ function Education() {
 
   return (
     <div className="my-12" ref={component}>
-      <h1 className="my-10 text-5xl font-bold capitalize">Education</h1>
+      <h1 className="title my-10 text-5xl font-bold capitalize opacity-0">
+        Education
+      </h1>
 
       <ul className="grid border-b border-b-slate-100">
         <li

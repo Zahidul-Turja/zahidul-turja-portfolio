@@ -73,7 +73,7 @@ function AboutImage() {
 
   return (
     <div
-      className="avatar relative -z-10 col-span-2 my-8 h-[80%] w-full overflow-hidden rounded-lg"
+      className="avatar relative -z-10 col-span-2 my-8 h-[80%] w-full -rotate-3 overflow-hidden rounded-lg"
       ref={component}
       style={{ transformStyle: "preserve-3d" }}
     >
@@ -83,9 +83,9 @@ function AboutImage() {
         placeholder="blur"
         blurDataURL="/avatar-01-small.jpg"
         layout="responsive"
-        className="avatar-image absolute inset-0 h-full w-full rounded-lg object-cover object-top"
+        className="avatar-image absolute inset-0 h-full w-full rounded-lg border-[3px] object-cover object-top"
       />
-      <div className="highlight absolute inset-0 hidden h-[90%] w-full scale-110 overflow-hidden rounded-lg bg-gradient-to-tr from-transparent via-white to-transparent opacity-0 md:block"></div>
+      <div className="highlight absolute inset-0 hidden h-[90%] w-full scale-110 overflow-hidden rounded-lg bg-gradient-to-tr from-transparent via-primary-500 to-transparent opacity-0 md:block"></div>
     </div>
   );
 }

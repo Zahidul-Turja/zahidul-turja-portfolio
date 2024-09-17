@@ -106,22 +106,22 @@ function InitialAnimation() {
 
   return (
     <div
-      className="fixed left-1/2 top-1/2 z-50 grid h-[80rem] w-[80rem] -translate-x-1/2 -translate-y-1/2 scale-150 place-items-center rounded-full bg-gray-950"
+      className="fixed left-1/2 top-1/2 z-50 grid h-[80rem] w-[90rem] -translate-x-1/2 -translate-y-1/2 scale-[1.5] place-items-center rounded-b-full bg-gray-950"
       ref={component}
     >
-      <h1 className="name absolute -translate-y-12 text-3xl font-bold capitalize text-primary-100 opacity-0">
+      <h1 className="name absolute text-3xl font-bold capitalize text-primary-100 opacity-0">
         Zahidul I. Turja
       </h1>
-      <h1 className="programmer absolute -translate-y-12 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="programmer absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
         Programmer
       </h1>
-      <h1 className="developer absolute -translate-y-12 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="developer absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
         Web Developer
       </h1>
-      <h1 className="designer absolute -translate-y-12 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="designer absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
         Designer
       </h1>
-      <h1 className="problem-solver absolute -translate-y-12 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="problem-solver absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
         Problem Solver
       </h1>
     </div>

@@ -1,12 +1,12 @@
 "use client";
 
-import { MdArrowOutward } from "react-icons/md";
+import { useEffect, useRef } from "react";
+import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 import { gsap } from "gsap";
 
 import PageTransition from "../_components/PageTransition";
 import AboutImage from "../_components/AboutImage";
 import Education from "../_components/sections/Education";
-import { useEffect, useRef } from "react";
 
 function Page() {
   const component = useRef();
@@ -16,19 +16,75 @@ function Page() {
       const tl = gsap.timeline();
 
       tl.fromTo(
-        ".resume-btn",
+        ".avatar",
         {
-          y: 30,
+          x: 30,
           opacity: 0,
         },
         {
-          y: 0,
+          x: 0,
           opacity: 1,
           duration: 0.5,
-          delay: 1,
+          delay: 1.5,
           ease: "power2.out",
         },
-      );
+      )
+        .fromTo(
+          ".about-title",
+          {
+            y: 10,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power2.out",
+          },
+          "-=0.3",
+        )
+        .fromTo(
+          ".skills",
+          {
+            y: 20,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power2.out",
+          },
+          "-=0.3",
+        )
+        .fromTo(
+          ".about-text",
+          {
+            y: 50,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power2.out",
+          },
+          "-=0.3",
+        )
+        .fromTo(
+          ".resume-btn",
+          {
+            y: 50,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.1,
+            ease: "power1.out",
+          },
+          "-=0.3",
+        );
     }, component);
 
     return () => ctx.revert();
@@ -41,11 +97,11 @@ function Page() {
       <div className="mx-72 px-10 py-24" ref={component}>
         <div className="grid grid-cols-5 gap-10 gap-x-24 gap-y-32">
           <div className="col-span-3">
-            <h1 className="text-5xl font-bold capitalize">About</h1>
-            <p className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text font-light text-transparent">
+            <h1 className="about-title text-5xl font-bold capitalize">About</h1>
+            <p className="skills bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text font-light text-transparent">
               Programmer | Web-developer | Designer
             </p>
-            <p className="prose prose-xl prose-slate prose-invert my-4 max-w-full text-justify leading-8">
+            <p className="about-text prose prose-xl prose-slate prose-invert my-4 max-w-full text-justify leading-8">
               Hey 👋! This is Zahidul Islam Turja, a recent graduate of the
               Computer Science and Engineering program at East West University,
               Dhaka, Bangladesh. I specialize in full-stack web development with
@@ -61,12 +117,21 @@ function Page() {
               projects to life!
             </p>
           </div>
-          <AboutImage />
+          <AboutImage className="avatar" />
         </div>
-        <a className="resume-btn group relative inline-block cursor-pointer overflow-hidden rounded-lg px-4 py-2 text-xl font-semibold opacity-0 transition-all hover:text-primary-900">
-          Resume
-          <MdArrowOutward className="ml-1 inline" />
-          <span className="absolute inset-0 -z-10 h-full w-full translate-y-10 bg-gradient-to-tr from-yellow-600 via-yellow-400 to-yellow-300 transition-all duration-300 group-hover:translate-y-0" />
+        <a
+          className="resume-btn group relative inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg px-6 py-2 text-xl font-semibold opacity-0 transition-all hover:text-primary-900"
+          href="/zahidul-turja.pdf"
+          download={"zahidul-turja.pdf"}
+        >
+          <span className="inline-flex items-center transition-transform duration-300 group-hover:-translate-y-10">
+            Resume
+            <MdArrowOutward className="ml-1 inline" />
+          </span>
+          <span className="absolute inset-0 -z-10 flex h-full w-full translate-y-10 items-center justify-center bg-gradient-to-tr from-yellow-600 via-yellow-400 to-yellow-300 text-center transition-all duration-300 group-hover:translate-y-0">
+            Download
+            <MdOutlineFileDownload className="ml-1 inline h-6 w-6 text-primary-950" />
+          </span>
         </a>
         <Education />
       </div>
