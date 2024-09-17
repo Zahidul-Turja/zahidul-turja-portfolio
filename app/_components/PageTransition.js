@@ -58,6 +58,7 @@ function PageTransition({ message }) {
           {
             x: 100,
             opacity: 0,
+            display: "none",
             duration: 1,
             ease: "power2.in",
           },
@@ -70,10 +71,10 @@ function PageTransition({ message }) {
 
   return (
     <div
-      className="absolute left-0 top-0 grid h-screen w-screen scale-150 place-items-center rounded-full bg-primary-950"
+      className="fixed left-0 top-0 z-0 grid h-screen w-screen scale-150 place-items-center rounded-full bg-primary-950"
       ref={component}
     >
-      <span className="message-animation -translate-y-10 text-4xl font-bold uppercase tracking-wider text-primary-50 opacity-0">
+      <span className="message-animation -translate-y-6 text-4xl font-bold uppercase tracking-wider text-primary-50 opacity-0">
         {message}
       </span>
     </div>

@@ -3,20 +3,23 @@
 import Image from "next/image";
 import { LuMoonStar } from "react-icons/lu";
 
-import avatar from "@/public/avatar-01.jpg";
+import avatar from "@/public/avatar-03.jpg";
 import ButtonSecondary from "./ButtonSecondary";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 function Navbar() {
   const curPath = usePathname();
 
   return (
-    <nav className="fixed z-10 flex min-h-14 w-full items-center justify-between bg-primary-900/50 px-20 py-2 shadow-md shadow-primary-950/25">
-      <Image
-        src={avatar}
-        alt="logo"
-        className="h-10 w-10 cursor-pointer rounded-full"
-      />
+    <nav className="fixed z-30 flex min-h-14 w-full items-center justify-between bg-primary-900/50 px-20 py-2 shadow-md shadow-primary-950/25">
+      <Link href="/">
+        <Image
+          src={avatar}
+          alt="logo"
+          className="h-10 w-10 cursor-pointer rounded-full border-2 border-primary-300"
+        />
+      </Link>
       <div className="flex items-center gap-8">
         <ButtonSecondary isActive={curPath === "/"} href="/" type="link">
           Home
