@@ -121,6 +121,7 @@ function Page() {
         </div>
         <a
           className="resume-btn group relative inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg px-6 py-2 text-xl font-semibold opacity-0 transition-all hover:text-primary-900"
+          target="_blank"
           href="/zahidul-turja.pdf"
           download={"zahidul-turja.pdf"}
         >
@@ -128,7 +129,7 @@ function Page() {
             Resume
             <MdArrowOutward className="ml-1 inline" />
           </span>
-          <span className="absolute inset-0 -z-10 flex h-full w-full translate-y-10 items-center justify-center bg-gradient-to-tr from-yellow-600 via-yellow-400 to-yellow-300 text-center transition-all duration-300 group-hover:translate-y-0">
+          <span className="absolute inset-0 -z-10 flex h-full w-full translate-y-10 items-center justify-center rounded-lg bg-gradient-to-tr from-yellow-600 via-yellow-400 to-yellow-300 text-center transition-all duration-300 group-hover:translate-y-0">
             Download
             <MdOutlineFileDownload className="ml-1 inline h-6 w-6 text-primary-950" />
           </span>

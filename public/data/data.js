@@ -3,7 +3,7 @@ export const BlogItems = [
     id: "blog-1",
     title: "useState in React",
     tags: ["React.js", "Next.js", "Frontend"],
-    image: "avatar-01.jpg",
+    image: "avatar-02.jpeg",
   },
   {
     id: "blog-2",
@@ -15,13 +15,13 @@ export const BlogItems = [
     id: "blog-3",
     title: "React Query",
     tags: ["React.js", "Next.js", "Tenstack"],
-    image: "avatar-01.jpg",
+    image: "avatar-03.jpg",
   },
   {
     id: "blog-4",
     title: "Hooks in React",
     tags: ["React.js", "Next.js", "Hooks"],
-    image: "avatar-01.jpg",
+    image: "avatar-01.jpeg",
   },
 ];
 
@@ -141,6 +141,7 @@ export const ProjectItems = [
       live: "https://dev-edu.vercel.app/",
     },
     techStack: ["python", "javascript", "django"],
+    tags: ["python", "javascript", "django"],
   },
   {
     id: "dev-edu",
@@ -155,6 +156,7 @@ export const ProjectItems = [
       live: "https://dev-edu.vercel.app/",
     },
     techStack: ["python", "javascript", "django"],
+    tags: ["python", "javascript", "django"],
   },
 ];
 
