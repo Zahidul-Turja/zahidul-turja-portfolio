@@ -5,7 +5,7 @@ function Blogs() {
   return (
     <section className="my-16">
       <h2 className="text-center text-5xl font-bold">Blogs</h2>
-      <ContentList items={items} pageType={"blog"} />;
+      <ContentList items={items} pageType={"blogs"} />;
     </section>
   );
 }

@@ -13,6 +13,7 @@ function ProjectLinks({ youtube, github, live, styles }) {
         <Link
           href={youtube}
           className="group relative overflow-hidden rounded p-1"
+          target="_blank"
         >
           <span className="absolute inset-0 z-0 h-full translate-y-12 rounded bg-[#FF0000] transition-transform duration-300 ease-in-out group-hover:translate-y-[1.6rem]" />
 
@@ -26,6 +27,7 @@ function ProjectLinks({ youtube, github, live, styles }) {
         <Link
           href={github}
           className="group relative overflow-hidden rounded p-1"
+          target="_blank"
         >
           <span className="absolute inset-0 z-0 h-full translate-y-12 rounded bg-primary-50 transition-transform duration-300 ease-in-out group-hover:translate-y-[1.6rem]" />
 
@@ -39,6 +41,7 @@ function ProjectLinks({ youtube, github, live, styles }) {
         <Link
           href={live}
           className="group relative overflow-hidden rounded p-1"
+          target="_blank"
         >
           <span className="absolute inset-0 z-0 h-full translate-y-12 rounded bg-[#74CE95] transition-transform duration-300 ease-in-out group-hover:translate-y-[1.6rem]" />
 

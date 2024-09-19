@@ -53,7 +53,7 @@ function Page() {
       <div className="mx-10 py-24">
         <h2 className="title text-center text-5xl font-bold">Projects</h2>
         <div className="list opacity-0">
-          <ContentList items={items} pageType={"projects"} />
+          <ContentList items={items} pageType={"projects"} yCal={430} />
         </div>
       </div>
     </div>

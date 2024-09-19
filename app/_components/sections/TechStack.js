@@ -20,7 +20,7 @@ import { motion } from "framer-motion";
 function TechStack() {
   return (
     <div className="my-12 flex w-full flex-col items-center justify-between px-[10vw]">
-      <h2 className="my-10 text-4xl font-bold">Teck Stack</h2>
+      <h2 className="my-10 text-4xl font-bold">Tech Stack</h2>
       {/* <h1 className="flex h-[10rem] w-[10rem] items-center justify-center rounded-full bg-slate-950 text-3xl font-semibold text-primary-50">
         Tech <br />
         Stack

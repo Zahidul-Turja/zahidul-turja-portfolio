@@ -11,22 +11,18 @@ function Education() {
   const itemRef = useRef([]);
 
   useEffect(() => {
-    // Animate list items with a stagger effect
     let ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-
-      // Animation for the title (slide up from bottom with opacity fade in)
-      tl.fromTo(
+      gsap.fromTo(
         ".title",
-        { opacity: 0, y: 50 }, // Start from y: 50 (below) and opacity 0
+        { opacity: 0, y: 30 },
         {
           y: 0,
           opacity: 1,
-          duration: 1.5, // Adjusted duration for smoother transition
-          ease: "power3.out", // Smooth easing
+          duration: 1,
+          ease: "elastic.out(1, 0.3)",
           scrollTrigger: {
             trigger: ".title",
-            start: "top 80%", // Adjusted start position for better visibility
+            start: "top bottom-=50px",
             end: "bottom 60%",
             toggleActions: "play none none none",
           },

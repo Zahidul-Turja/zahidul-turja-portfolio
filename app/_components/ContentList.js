@@ -8,7 +8,7 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function ContentList({ items, pageType }) {
+function ContentList({ items, pageType, yCal = 160 }) {
   const component = useRef(null);
   const itemsRef = useRef([]);
 
@@ -59,7 +59,7 @@ function ContentList({ items, pageType }) {
 
           gsap.to(revealRef.current, {
             x: gsap.utils.clamp(0, maxX, mousePos.x - 110),
-            y: gsap.utils.clamp(0, maxY, mousePos.y - 160),
+            y: gsap.utils.clamp(0, maxY, mousePos.y - yCal),
             rotation: speed * (mousePos.x > lastMousePos.current.x ? 1 : -1),
             ease: "back.out(2)",
             duration: 1.3,
@@ -130,7 +130,7 @@ function ContentList({ items, pageType }) {
                 </div>
               </div>
               <span className="ml-auto flex items-center gap-2 text-xl font-medium md:ml-0">
-                {pageType === "blog" ? (
+                {pageType === "blogs" ? (
                   <>
                     Read more <MdArrowOutward />
                   </>
