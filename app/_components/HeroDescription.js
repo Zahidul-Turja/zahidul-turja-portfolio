@@ -23,7 +23,7 @@ function HeroDescription() {
       </p>
 
       <Link
-        className="resume-btn group relative z-0 inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg bg-secondary-800 px-6 py-2 font-semibold transition-all hover:text-primary-100 md:text-xl lg:-z-10"
+        className="resume-btn group relative z-0 inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg bg-secondary-800 px-6 py-2 font-semibold transition-all hover:text-primary-100 md:text-xl"
         target="_blank"
         href="/zahidul-turja.pdf"
         download="zahidul-turja.pdf"
