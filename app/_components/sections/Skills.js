@@ -66,7 +66,7 @@ function Skills() {
   }, []);
 
   return (
-    <div className="w-full py-14" ref={component}>
+    <div className="w-full py-8 md:py-14" ref={component}>
       {SKILLS.map(({ tech_name, tech_color }, index) => (
         <div
           key={index}
@@ -76,7 +76,7 @@ function Skills() {
           {Array.from({ length: 15 }, (_, index) => (
             <React.Fragment key={index}>
               <span
-                className="tech-item text-8xl font-extrabold uppercase tracking-tighter"
+                className="tech-item text-5xl font-extrabold uppercase tracking-tighter md:text-8xl"
                 style={{
                   color: index === 7 && tech_color ? tech_color : "inherit",
                 }}

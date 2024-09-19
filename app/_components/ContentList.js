@@ -81,7 +81,7 @@ function ContentList({ items, pageType, yCal = 160 }) {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [hovering, currentItem]);
+  }, [hovering, currentItem, yCal]);
 
   const onMouseEnter = (index) => {
     setCurrentItem(index);
@@ -102,7 +102,7 @@ function ContentList({ items, pageType, yCal = 160 }) {
   }, [items]);
 
   return (
-    <div ref={component} className="-z-10 mx-auto my-16 w-[80%]">
+    <div ref={component} className="-z-10 mx-auto my-16 w-[90%] md:w-[80%]">
       <ul
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
@@ -116,20 +116,22 @@ function ContentList({ items, pageType, yCal = 160 }) {
           >
             <Link
               href={urlPrefix + "/" + item.id}
-              className="flex flex-col justify-between border-t border-t-slate-100 py-10 text-slate-200 md:flex-row"
+              className="flex flex-col justify-between border-t border-t-slate-100 py-6 text-slate-200 md:flex-row md:py-10"
               aria-label={item.title}
             >
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold">{item.title}</span>
+              <div className="flex flex-col items-start">
+                <span className="text-2xl font-bold md:text-3xl">
+                  {item.title}
+                </span>
                 <div className="flex gap-3 text-yellow-400">
                   {item.tags.map((tag, i) => (
-                    <span key={i} className="text-lg font-bold">
+                    <span key={i} className="text-base font-bold md:text-lg">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
-              <span className="ml-auto flex items-center gap-2 text-xl font-medium md:ml-0">
+              <span className="my-4 ml-0 flex items-center gap-2 text-base font-medium md:ml-0 md:text-xl">
                 {pageType === "blogs" ? (
                   <>
                     Read more <MdArrowOutward />
