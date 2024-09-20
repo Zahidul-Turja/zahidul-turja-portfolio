@@ -71,10 +71,10 @@ function PageTransition({ message }) {
 
   return (
     <div
-      className="fixed left-0 top-0 z-10 grid h-screen w-screen scale-150 place-items-center rounded-full bg-primary-950"
+      className="fixed left-0 top-0 z-10 grid h-screen w-screen scale-150 place-items-center rounded-full bg-primary-950 text-center"
       ref={component}
     >
-      <span className="message-animation max-w-[50%] -translate-y-6 text-center text-4xl font-bold uppercase tracking-wider text-primary-50 opacity-0">
+      <span className="message-animation max-w-[50%] -translate-y-6 text-center text-2xl font-bold uppercase tracking-wider text-primary-50 opacity-0 lg:text-4xl">
         {message}
       </span>
     </div>

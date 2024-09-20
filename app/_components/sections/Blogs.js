@@ -45,7 +45,7 @@ function Blogs() {
       <h2 className="title-tech-stack text-3xl font-bold md:text-4xl lg:text-5xl">
         Blogs
       </h2>
-      <ContentList items={items} pageType={"blogs"} />
+      <ContentList items={items.slice(0, 3)} pageType={"blogs"} />
       <Link
         className="resume-btn group relative inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg px-6 py-2 text-xl font-semibold transition-all hover:text-primary-900"
         href="/blogs"

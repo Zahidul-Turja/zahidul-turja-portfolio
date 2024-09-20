@@ -12,7 +12,7 @@ import ProjectLinks from "./ProjectLinks";
 
 function ProjectDetails({ id, title, description, links, techStack }) {
   return (
-    <div className="min-h-[52vh] w-full rounded-lg bg-primary-900 md:w-[50%]">
+    <div className="hidden min-h-[52vh] w-full rounded-lg bg-primary-900 md:block md:w-[50%]">
       <div className="flex items-center justify-between">
         <div className="mb-1 ml-6 mt-5 flex items-center gap-4">
           <RiNextjsFill />

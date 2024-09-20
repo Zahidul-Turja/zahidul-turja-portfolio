@@ -61,7 +61,7 @@ function Projects() {
       </h2>
 
       <div className="content-projects">
-        {ProjectItems.map((item, index) => (
+        {ProjectItems.slice(0, 3).map((item, index) => (
           <ProjectCard key={index} project={item} index={index} />
         ))}
       </div>

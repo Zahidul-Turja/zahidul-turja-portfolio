@@ -68,7 +68,7 @@ function TechStack() {
   return (
     <div
       ref={component}
-      className="my-8 flex w-full flex-col items-center justify-between bg-gray-950 px-[3vw] py-10 md:my-10 md:px-[10vw] md:py-16 lg:my-12 lg:py-24"
+      className="my-8 flex w-full flex-col items-center justify-between bg-gray-950/65 px-[3vw] py-10 md:my-10 md:px-[10vw] md:py-16 lg:my-12 lg:py-24"
     >
       <h2 className="title-tech-stack text-3xl font-bold md:text-4xl lg:text-5xl">
         Tech Stack

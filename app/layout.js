@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${urbanist.className} min-h-screen overflow-x-hidden overflow-y-scroll bg-primary-950 text-primary-100 antialiased`}
       >
         <InitialAnimation />
-        {/* <StarsCanvas /> */}
+        <StarsCanvas />
         <Navbar />
         {children}
         <Footer />
