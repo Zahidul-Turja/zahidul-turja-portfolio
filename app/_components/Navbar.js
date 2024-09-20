@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { FaBars, FaTimes } from "react-icons/fa";
 import avatar from "@/public/avatar-03.jpg";
 import ButtonSecondary from "./ButtonSecondary";
 
@@ -18,13 +18,14 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed z-30 flex min-h-14 w-full items-center justify-between bg-primary-900/50 px-6 py-2 shadow-md shadow-primary-950/25 md:pt-6 lg:px-20">
+    <nav className="fixed z-30 flex w-full items-center justify-between bg-primary-900/50 px-6 py-4 shadow-md shadow-primary-950/25 md:py-4 lg:px-20">
       {/* Logo on the left */}
       <Link href="/">
         <Image
           src={avatar}
           alt="logo"
-          className="h-6 w-6 cursor-pointer rounded-full border-2 border-primary-300 md:h-8 md:w-8 lg:h-10 lg:w-10"
+          placeholder="blur"
+          className="h-10 w-10 cursor-pointer rounded-full border-2 border-primary-300 lg:h-12 lg:w-12"
         />
       </Link>
 
@@ -75,26 +76,42 @@ function Navbar() {
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
           exit={{ x: "100%" }}
-          className="fixed right-0 top-0 z-40 h-screen w-3/4 bg-white px-8 py-14 text-primary-900 shadow-lg"
+          className="fixed right-0 top-0 z-40 h-screen w-full bg-white px-8 py-14 text-primary-900 shadow-lg"
         >
-          <ul className="space-y-6 text-lg font-semibold">
+          <ul className="mt-6 flex flex-col space-y-6 text-center text-lg font-bold">
             <li>
-              <Link href="/" onClick={toggleMenu}>
+              <Link
+                href="/"
+                onClick={toggleMenu}
+                className="block w-full border-b-2 border-slate-400 py-6 text-2xl"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" onClick={toggleMenu}>
+              <Link
+                href="/about"
+                onClick={toggleMenu}
+                className="block w-full border-b-2 border-slate-400 py-6 text-2xl"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/projects" onClick={toggleMenu}>
+              <Link
+                href="/projects"
+                onClick={toggleMenu}
+                className="block w-full border-b-2 border-slate-400 py-6 text-2xl"
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/blogs" onClick={toggleMenu}>
+              <Link
+                href="/blogs"
+                onClick={toggleMenu}
+                className="block w-full border-b-2 border-slate-400 py-6 text-2xl"
+              >
                 Blogs
               </Link>
             </li>

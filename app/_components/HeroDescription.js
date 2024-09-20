@@ -6,7 +6,7 @@ import { MdArrowOutward, MdOutlineFileDownload } from "react-icons/md";
 
 function HeroDescription() {
   return (
-    <div className="h-full max-w-[80vw] md:max-w-[50vw]">
+    <div className="mx-auto h-full max-w-[90vw] md:mx-0 md:max-w-[50vw]">
       <div className="welcome-box -z-10 border border-secondary-800 px-4 py-2 opacity-90">
         <SparklesIcon className="mr-3 h-5 w-5 text-secondary-600" />
         <h3>Hey there 👋, I&apos;m</h3>
@@ -17,13 +17,13 @@ function HeroDescription() {
       <p className="mb-5 mt-1 bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text font-light text-transparent">
         Programmer | Web-developer | Designer
       </p>
-      <p className="max-w-[90%] text-justify text-base md:mb-10 lg:text-xl">
+      <p className="max-w-[95%] text-justify text-base md:mb-10 lg:text-xl">
         🚀 A fullstack Software Engineer with experience in Websites and Mobile
         Application Development. Available for projects and collaborations 🤝.
       </p>
 
       <Link
-        className="resume-btn group relative z-0 inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg bg-secondary-800 px-6 py-2 font-semibold transition-all hover:text-primary-100 md:text-xl"
+        className="resume-btn group relative z-0 mx-auto inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg bg-secondary-800 px-6 py-2 font-semibold transition-all hover:text-primary-100 md:text-xl"
         target="_blank"
         href="/zahidul-turja.pdf"
         download="zahidul-turja.pdf"

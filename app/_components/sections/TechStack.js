@@ -76,7 +76,7 @@ function TechStack() {
 
       <div className="content my-14 flex w-full flex-wrap justify-center gap-8 md:w-[85%] lg:w-[75%]">
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -92,7 +92,7 @@ function TechStack() {
           <RiNextjsLine className="text-5xl text-primary-900" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -105,10 +105,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <FaReact className="text-5xl text-[#5ED3F3]" />
+          <FaReact className="text-4xl text-[#5ED3F3] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -121,10 +121,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiReactquery className="text-5xl text-[#FF4154]" />
+          <SiReactquery className="text-4xl text-[#FF4154] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -137,10 +137,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <TbBrandRedux className="text-5xl text-[#7248B6]" />
+          <TbBrandRedux className="text-4xl text-[#7248B6] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -153,10 +153,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiExpress className="text-5xl text-primary-900" />
+          <SiExpress className="text-4xl text-primary-900 md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -169,10 +169,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <IoLogoNodejs className="text-5xl text-[#428A3C]" />
+          <IoLogoNodejs className="text-4xl text-[#428A3C] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -185,10 +185,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiMongodb className="text-5xl text-[#428A3C]" />
+          <SiMongodb className="text-4xl text-[#428A3C] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -201,10 +201,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <RiTailwindCssFill className="text-5xl text-[#13B9B3]" />
+          <RiTailwindCssFill className="text-4xl text-[#13B9B3] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -217,10 +217,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiChakraui className="text-5xl text-[#4FD1C5]" />
+          <SiChakraui className="text-4xl text-[#4FD1C5] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -233,10 +233,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiSupabase className="text-5xl text-[#2D7555]" />
+          <SiSupabase className="text-4xl text-[#2D7555] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -249,10 +249,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiMysql className="text-5xl text-[#00718B]" />
+          <SiMysql className="text-4xl text-[#00718B] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -265,10 +265,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <FaFigma className="text-5xl text-secondary-800" />
+          <FaFigma className="text-4xl text-secondary-800 md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -281,10 +281,10 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiDjango className="text-5xl text-[#092D1F]" />
+          <SiDjango className="text-4xl text-[#092D1F] md:text-5xl" />
         </motion.div>
         <motion.div
-          className="flex h-20 w-20 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30"
+          className="flex h-14 w-14 cursor-grab items-center justify-center rounded-full bg-slate-50 shadow-md shadow-primary-900/30 md:h-20 md:w-20"
           drag
           dragConstraints={{
             top: -12,
@@ -297,7 +297,7 @@ function TechStack() {
             bounceStiffness: 600,
           }}
         >
-          <SiTensorflow className="text-5xl text-[#F77500]" />
+          <SiTensorflow className="text-4xl text-[#F77500] md:text-5xl" />
         </motion.div>
       </div>
     </div>

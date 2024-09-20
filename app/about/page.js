@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import PageTransition from "../_components/PageTransition";
 import AboutImage from "../_components/AboutImage";
 import Education from "../_components/sections/Education";
+import Footer from "../_components/sections/Footer";
 
 function Page() {
   const component = useRef();
@@ -94,14 +95,16 @@ function Page() {
     <>
       <PageTransition message="About" />
 
-      <div className="mx-72 px-10 py-24" ref={component}>
-        <div className="grid grid-cols-5 gap-10 gap-x-24 gap-y-32">
-          <div className="col-span-3">
-            <h1 className="about-title text-5xl font-bold capitalize">About</h1>
+      <div ref={component} className="overflow-x-hidden px-10 py-24 lg:mx-72">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-5 lg:gap-24 lg:gap-y-32">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-3">
+            <h1 className="about-title text-4xl font-bold capitalize sm:text-5xl">
+              About
+            </h1>
             <p className="skills bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text font-light text-transparent">
               Programmer | Web-developer | Designer
             </p>
-            <p className="about-text prose prose-xl prose-slate prose-invert my-4 max-w-full text-justify leading-8">
+            <p className="about-text prose prose-lg prose-slate prose-invert my-4 max-w-full text-justify leading-7 sm:prose-xl sm:leading-8">
               Hey 👋! This is Zahidul Islam Turja, a recent graduate of the
               Computer Science and Engineering program at East West University,
               Dhaka, Bangladesh. I specialize in full-stack web development with
@@ -117,8 +120,9 @@ function Page() {
               projects to life!
             </p>
           </div>
-          <AboutImage className="avatar" />
+          <AboutImage className="avatar h-40 w-40 sm:h-60 sm:w-60 lg:h-full lg:w-full" />
         </div>
+
         <a
           className="resume-btn group relative inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg px-6 py-2 text-xl font-semibold opacity-0 transition-all hover:text-primary-900"
           target="_blank"
@@ -136,6 +140,8 @@ function Page() {
         </a>
         <Education />
       </div>
+
+      <Footer />
     </>
   );
 }
