@@ -184,30 +184,29 @@ export const ProjectItems = [
     image: "/project-images/wild-oasis-admin.png",
     imageHover: "/project-images/hover-wild-oasis-admin.png",
     description:
-      "Clothzy is a dummy e-commerce application developed as a learning project with guidance from YouTube tutorials. Built using React for the frontend and Node.js for the backend, the application allows users to create and manage their own clothing collections. The project was deployed on Render for hosting.",
+      "Wild Oasis is a hotel management system, designed to streamline administrative tasks for hotel staff. This web application serves as the admin interface, allowing the receptionist to efficiently add, edit, and delete rooms for customers upon arrival. The system simplifies operations by not requiring online payments, providing a convenient solution for managing bookings. It features multiple filters and sorting options, enabling staff to view room availability over various time periods, such as the last 7 or 90 days.The project was built using React.js for the frontend, React Query for data management, GraphQL, Styled Components for styling, and Supabase for the backend. It was deployed on Vercel, with the backend utilizing the free tier of Supabase. This guided project was developed with the help of online tutorials.",
     links: {
-      youtube: "https://www.youtube.com/watch?v=0HRVl44h4do",
-      github: "https://github.com/Zahidul-Turja/mern-e-comm",
-      live: "https://mern-e-comm-i0h0.onrender.com/",
+      youtube: "https://youtu.be/QokF-RoPCpQ?si=Tze1EIIWny-DcHLk",
+      github: "https://github.com/Zahidul-Turja/wild-oasis-hotel-management",
+      live: "https://wild-oasis-hotel-management.vercel.app/dashboard",
     },
-    techStack: [
-      "React",
-      "Node",
-      "Express",
-      "MongoDB",
-      "Redis",
-      "Stripe",
-      "Tailwind",
-    ],
-    tags: [
-      "React",
-      "Node",
-      "Express",
-      "MongoDB",
-      "Redis",
-      "Stripe",
-      "Tailwind",
-    ],
+    techStack: ["React", "Query", "GraphQL", "Supabase"],
+    tags: ["React", "Query", "GraphQL", "Supabase"],
+  },
+  {
+    id: "wild-oasis-customer",
+    title: "Wild Oasis - customer part of a hotel",
+    image: "/project-images/wild-oasis-customer.png",
+    imageHover: "/project-images/hover-wild-oasis-customer.png",
+    description:
+      "Wild Oasis is a hotel management system, specifically designed as the customer-facing web application for a hotel. It enables users to browse available rooms, check real-time availability, and make bookings without conflicts. Customers can also log in seamlessly using their Google accounts. The project was built using Next.js for the framework, Auth.js for authentication, TailwindCSS for styling, and Supabase for database management. This guided project was developed with the help of online tutorials.",
+    links: {
+      youtube: "https://youtu.be/OSnr-s6iF4s?si=80g4dCNrf9dGKRyW",
+      github: "https://github.com/Zahidul-Turja/wild-oasis-customer-side",
+      live: "https://wild-oasis-for-guest.vercel.app/",
+    },
+    techStack: ["Next", "Auth", "Tailwind", "Supabase"],
+    tags: ["Next", "Auth", "Tailwind", "Supabase"],
   },
 ];
 
@@ -280,6 +279,56 @@ export const Projects = {
       youtube: "https://www.youtube.com/watch?v=0HRVl44h4do",
       github: "https://github.com/Zahidul-Turja/mern-e-comm",
       live: "https://mern-e-comm-i0h0.onrender.com/",
+    },
+  },
+
+  "wild-oasis-admin": {
+    title: "Wild Oasis",
+    subtitle: "admin panel of a hotel",
+    date: "2022-01-01",
+    tags: ["React", "Query", "GraphQL", "Supabase"],
+    image: "/project-images/wild-oasis-admin.png",
+    video: "https://youtu.be/QokF-RoPCpQ?si=Tze1EIIWny-DcHLk",
+    description:
+      "Wild Oasis is a hotel management system, designed to streamline administrative tasks for hotel staff. This web application serves as the admin interface, allowing the receptionist to efficiently add, edit, and delete rooms for customers upon arrival. The system simplifies operations by not requiring online payments, providing a convenient solution for managing bookings. It features multiple filters and sorting options, enabling staff to view room availability over various time periods, such as the last 7 or 90 days.The project was built using React.js for the frontend, React Query for data management, GraphQL, Styled Components for styling, and Supabase for the backend. It was deployed on Vercel, with the backend utilizing the free tier of Supabase. This guided project was developed with the help of online tutorials.",
+    features: [
+      "Supabase authentication for secure admin login.",
+      "Full CRUD functionality for managing rooms.",
+      "Reservation status tracking to avoid booking conflicts.",
+      "Visual transaction graphs for insights into hotel operations.",
+      "Pagination for easy navigation through data.",
+      "Multiple options for sorting and filtering, such as checking room availability over the last 7 or 90 days.",
+    ],
+    technologies: ["React", "Query", "GraphQL", "Supabase"],
+    links: {
+      youtube: "https://youtu.be/QokF-RoPCpQ?si=Tze1EIIWny-DcHLk",
+      github: "https://github.com/Zahidul-Turja/wild-oasis-hotel-management",
+      live: "https://wild-oasis-hotel-management.vercel.app/dashboard",
+    },
+  },
+
+  "wild-oasis-customer": {
+    title: "Wild Oasis",
+    subtitle: "customer part of a hotel",
+    date: "2022-01-01",
+    tags: ["Next", "Auth", "Tailwind", "Supabase"],
+    image: "/project-images/wild-oasis-customer.png",
+    video: "https://youtu.be/OSnr-s6iF4s?si=80g4dCNrf9dGKRyW",
+    description:
+      "Wild Oasis is a hotel management system, specifically designed as the customer-facing web application for a hotel. It enables users to browse available rooms, check real-time availability, and make bookings without conflicts. Customers can also log in seamlessly using their Google accounts. The project was built using Next.js for the framework, Auth.js for authentication, TailwindCSS for styling, and Supabase for database management. This guided project was developed with the help of online tutorials.",
+    features: [
+      "Google Sign-in with Auth.js for secure and convenient admin access.",
+      "Ability to search through cabins quickly.",
+      "Filter rooms using various parameters, such as availability over the last 7 or 90 days.",
+      "Option to book or reserve rooms for available dates only, preventing double bookings.",
+      "Detailed information on all reservations, providing full visibility for staff.",
+      "Ability to add additional services, such as breakfast, during the reservation process.",
+    ],
+    technologies: ["Next", "Auth", "Tailwind", "Supabase"],
+    links: {
+      youtube: "https://youtu.be/OSnr-s6iF4s?si=80g4dCNrf9dGKRyW",
+      github: "https://github.com/Zahidul-Turja/wild-oasis-customer-side",
+      live: "https://wild-oasis-for-guest.vercel.app/",
     },
   },
 };
