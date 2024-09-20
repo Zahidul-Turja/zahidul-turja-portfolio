@@ -66,8 +66,9 @@ function TechStack() {
   }, []);
 
   return (
-    <div
+    <section
       ref={component}
+      id="tech-stack"
       className="my-8 flex w-full flex-col items-center justify-between bg-gray-950/65 px-[3vw] py-10 md:my-10 md:px-[10vw] md:py-16 lg:my-12 lg:py-24"
     >
       <h2 className="title-tech-stack text-3xl font-bold md:text-4xl lg:text-5xl">
@@ -300,7 +301,7 @@ function TechStack() {
           <SiTensorflow className="text-4xl text-[#F77500] md:text-5xl" />
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

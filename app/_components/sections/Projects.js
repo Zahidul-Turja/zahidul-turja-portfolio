@@ -55,7 +55,11 @@ function Projects() {
   }, []);
 
   return (
-    <div ref={component} className="mb-4 w-full py-14 text-center md:mb-24">
+    <section
+      id="projects"
+      ref={component}
+      className="mb-4 w-full py-14 text-center md:mb-24"
+    >
       <h2 className="title-tech-stack text-3xl font-bold md:text-4xl lg:text-5xl">
         Projects
       </h2>
@@ -78,7 +82,7 @@ function Projects() {
           <MdReadMore className="ml-1 inline h-6 w-6 text-primary-950" />
         </span>
       </Link>
-    </div>
+    </section>
   );
 }
 

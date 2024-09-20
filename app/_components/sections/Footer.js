@@ -3,7 +3,10 @@ import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="container mx-auto flex w-full flex-col items-center justify-between gap-6 bg-gray-950 px-[10vw] py-24 sm:flex-row">
+    <footer
+      id="contact"
+      className="container mx-auto flex w-full flex-col items-center justify-between gap-8 bg-gray-950 px-[10vw] py-16 sm:flex-row md:gap-6 md:py-24"
+    >
       <h2 className="text-3xl font-extrabold">Zahidul Turja</h2>
 
       <div className="name flex flex-col items-center justify-center gap-x-4 gap-y-2 sm:flex-row sm:justify-self-start">

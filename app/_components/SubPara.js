@@ -56,10 +56,14 @@ function SubPara({ title, para, image, itemsList }) {
       </p>
 
       {itemsList && (
-        <ul className="prose prose-invert my-2 !max-w-none text-justify font-medium md:ml-10 md:text-lg">
+        <ul className="prose prose-invert my-2 ml-3 !max-w-none list-outside list-decimal text-justify font-medium md:ml-10 md:text-lg">
           {itemsList.map((item, index) => (
-            <li key={index} ref={(el) => (itemsRef.current[index] = el)}>
-              {index + 1}. &emsp;{item}
+            <li
+              key={index}
+              ref={(el) => (itemsRef.current[index] = el)}
+              className="my-3"
+            >
+              {item}
             </li>
           ))}
         </ul>

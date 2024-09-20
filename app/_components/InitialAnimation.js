@@ -2,6 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { MdPersonalVideo } from "react-icons/md";
+import { FaCode, FaFigma } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function InitialAnimation() {
   const component = useRef();
@@ -109,19 +112,23 @@ function InitialAnimation() {
       className="fixed left-1/2 top-1/2 z-50 grid h-[80rem] w-[90rem] -translate-x-1/2 -translate-y-1/2 scale-[1.5] place-items-center rounded-b-full bg-gray-950"
       ref={component}
     >
-      <h1 className="name absolute text-3xl font-bold capitalize text-primary-100 opacity-0">
+      <h1 className="name absolute flex items-center gap-2 text-3xl font-bold capitalize text-primary-100 opacity-0">
         Zahidul I. Turja
       </h1>
-      <h1 className="programmer absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="programmer absolute flex items-center gap-2 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+        <FaCode />
         Programmer
       </h1>
-      <h1 className="developer absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="developer absolute flex items-center gap-2 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+        <MdPersonalVideo />
         Web Developer
       </h1>
-      <h1 className="designer absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="designer absolute flex items-center gap-2 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+        <FaFigma />
         Designer
       </h1>
-      <h1 className="problem-solver absolute text-3xl font-semibold capitalize text-primary-100 opacity-0">
+      <h1 className="problem-solver absolute flex items-center gap-2 text-3xl font-semibold capitalize text-primary-100 opacity-0">
+        <SiLeetcode />
         Problem Solver
       </h1>
     </div>

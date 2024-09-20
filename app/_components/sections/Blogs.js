@@ -39,6 +39,7 @@ function Blogs() {
 
   return (
     <section
+      id="blogs"
       className="mx-auto mb-16 mt-8 max-w-[90%] text-center md:mb-32 md:mt-16"
       ref={component}
     >

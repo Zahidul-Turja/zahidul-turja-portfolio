@@ -47,7 +47,7 @@ function Page() {
   }, []);
 
   return (
-    <div className="mx-10 py-24" ref={content}>
+    <div className="mx-auto py-24" ref={content}>
       <PageTransition message="Blogs" />
 
       <div>

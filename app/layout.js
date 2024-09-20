@@ -5,6 +5,7 @@ import StarsCanvas from "./_components/StarsCanvas";
 import Navbar from "./_components/Navbar";
 import InitialAnimation from "./_components/InitialAnimation";
 import Footer from "./_components/sections/Footer";
+import { Toaster } from "react-hot-toast";
 
 // const inter = Inter({ subsets: ["latin"] });
 const urbanist = Urbanist({ subsets: ["latin"] });
@@ -29,6 +30,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+
+        <Toaster position="top-center" />
       </body>
     </html>
   );

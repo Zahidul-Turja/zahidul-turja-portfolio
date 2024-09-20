@@ -4,24 +4,28 @@ export const BlogItems = [
     title: "useState in React",
     tags: ["React.js", "Next.js", "Frontend"],
     image: "avatar-02.jpeg",
+    imageHover: "avatar-02.jpeg",
   },
   {
     id: "blog-2",
     title: "Example of A Closure Error in React",
     tags: ["useState", "React.js", "Closure"],
     image: "wild-oasis-client.png",
+    imageHover: "wild-oasis-client.png",
   },
   {
     id: "blog-3",
     title: "React Query",
     tags: ["React.js", "Next.js", "Tenstack"],
     image: "avatar-03.jpg",
+    imageHover: "avatar-03.jpg",
   },
   {
     id: "blog-4",
     title: "Hooks in React",
     tags: ["React.js", "Next.js", "Hooks"],
     image: "avatar-01.jpeg",
+    imageHover: "avatar-01.jpeg",
   },
 ];
 
@@ -132,6 +136,7 @@ export const ProjectItems = [
     id: "dev-edu",
     title: "DevEdu - an educational platform for developers",
     image: "/project-images/devedu.png",
+    imageHover: "/project-images/devedu.png",
     description:
       "DevEdu is an e-learning platform designed specifically for the Computer Science domain. This project was developed as part of a Software Engineering course during my Computer Science degree. The project requirements were provided by the course instructor, and the development was completed within a two-month deadline.",
     links: {
@@ -146,6 +151,38 @@ export const ProjectItems = [
     id: "clothzy",
     title: "Clothzy - a clothing store",
     image: "/project-images/clothzy.png",
+    imageHover: "/project-images/clothzy.png",
+    description:
+      "Clothzy is a dummy e-commerce application developed as a learning project with guidance from YouTube tutorials. Built using React for the frontend and Node.js for the backend, the application allows users to create and manage their own clothing collections. The project was deployed on Render for hosting.",
+    links: {
+      youtube: "https://www.youtube.com/watch?v=0HRVl44h4do",
+      github: "https://github.com/Zahidul-Turja/mern-e-comm",
+      live: "https://mern-e-comm-i0h0.onrender.com/",
+    },
+    techStack: [
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Redis",
+      "Stripe",
+      "Tailwind",
+    ],
+    tags: [
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Redis",
+      "Stripe",
+      "Tailwind",
+    ],
+  },
+  {
+    id: "wild-oasis-admin",
+    title: "Wild Oasis - admin panel of a hotel",
+    image: "/project-images/wild-oasis-admin.png",
+    imageHover: "/project-images/hover-wild-oasis-admin.png",
     description:
       "Clothzy is a dummy e-commerce application developed as a learning project with guidance from YouTube tutorials. Built using React for the frontend and Node.js for the backend, the application allows users to create and manage their own clothing collections. The project was deployed on Render for hosting.",
     links: {

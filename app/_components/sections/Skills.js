@@ -10,20 +10,20 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SKILLS = [
   {
-    tech_name: "React.js",
+    tech_name: "Frontend",
     tech_color: "#61DBFB",
   },
   {
-    tech_name: "Next.js",
+    tech_name: "Backend",
     tech_color: "#ffffff",
   },
   {
-    tech_name: "Node.js",
+    tech_name: "MERN",
     tech_color: "#339933",
   },
   {
-    tech_name: "Django",
-    tech_color: "#0077b5",
+    tech_name: "Design",
+    tech_color: "#EA4C1D",
   },
 ];
 
@@ -66,7 +66,7 @@ function Skills() {
   }, []);
 
   return (
-    <div className="w-full py-8 md:py-14" ref={component}>
+    <div className="w-full py-8 md:py-14" ref={component} id="services">
       {SKILLS.map(({ tech_name, tech_color }, index) => (
         <div
           key={index}
