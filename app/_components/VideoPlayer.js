@@ -74,12 +74,12 @@ function VideoPlayer({ video }) {
         <LoadingContent />
       </div>
 
-      <div className="player w-full opacity-0">
+      <div className="player h-[200px] w-full opacity-0 md:h-[480px]">
         <ReactPlayer
           url={video}
           controls={true}
           width="100%"
-          height={"480px"}
+          height={"100%"}
           muted={true}
           style={{
             borderRadius: "1rem",

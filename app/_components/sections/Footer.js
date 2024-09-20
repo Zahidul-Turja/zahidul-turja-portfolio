@@ -3,12 +3,12 @@ import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="container mx-auto mt-20 flex flex-col items-center justify-between gap-6 bg-gray-950 px-[10vw] py-24 sm:flex-row">
+    <footer className="container mx-auto flex w-full flex-col items-center justify-between gap-6 bg-gray-950 px-[10vw] py-24 sm:flex-row">
       <h2 className="text-3xl font-extrabold">Zahidul Turja</h2>
 
       <div className="name flex flex-col items-center justify-center gap-x-4 gap-y-2 sm:flex-row sm:justify-self-start">
         <Link
-          href={"/"}
+          href={"/about"}
           className="text-xl font-semibold tracking-tighter text-slate-100 transition-colors duration-150 hover:text-yellow-400"
         >
           About
@@ -20,7 +20,7 @@ function Footer() {
           |
         </span>
         <Link
-          href={"/"}
+          href={"/projects"}
           className="text-xl font-semibold tracking-tighter text-slate-100 transition-colors duration-150 hover:text-yellow-400"
         >
           Projects
@@ -32,7 +32,7 @@ function Footer() {
           |
         </span>
         <Link
-          href={"/"}
+          href={"/blogs"}
           className="text-xl font-semibold tracking-tighter text-slate-100 transition-colors duration-150 hover:text-yellow-400"
         >
           Blogs

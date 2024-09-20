@@ -102,7 +102,7 @@ function ContentList({ items, pageType, yCal = 160 }) {
   }, [items]);
 
   return (
-    <div ref={component} className="-z-10 mx-auto my-16 w-[90%] md:w-[80%]">
+    <div ref={component} className="-z-10 mx-auto my-16 w-full md:w-[80%]">
       <ul
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
@@ -124,11 +124,17 @@ function ContentList({ items, pageType, yCal = 160 }) {
                   {item.title}
                 </span>
                 <div className="flex gap-3 text-yellow-400">
-                  {item.tags.map((tag, i) => (
-                    <span key={i} className="text-base font-bold md:text-lg">
-                      {tag}
-                    </span>
-                  ))}
+                  {item.tags.map(
+                    (tag, i) =>
+                      i < 4 && (
+                        <span
+                          key={i}
+                          className="text-base font-bold md:text-lg"
+                        >
+                          {tag}
+                        </span>
+                      ),
+                  )}
                 </div>
               </div>
               <span className="my-4 ml-0 flex items-center gap-2 text-base font-medium md:ml-0 md:text-xl">

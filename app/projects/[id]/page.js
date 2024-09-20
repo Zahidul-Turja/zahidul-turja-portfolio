@@ -107,21 +107,23 @@ function Page() {
   return (
     <>
       <PageTransition message={project.title} />
-      <div className="mx-72 px-10 py-24" ref={content}>
+
+      <div className="px-10 py-24 lg:mx-72" ref={content}>
         {project.video && <VideoPlayer video={project.video} />}
-        <h1 className="title text-4xl font-bold">
+        <h1 className="title text-xl font-bold md:text-4xl">
           {project.title} - {project.subtitle}
         </h1>
-        <div className="tags my-2">
+        <div className="tags my-2 flex flex-wrap gap-2">
           {project.tags.map((tag, index) => (
             <span
               key={index}
-              className="mr-2 inline-block rounded-full bg-gradient-to-tr from-secondary-950 via-secondary-800 to-secondary-600 px-4 py-1 text-sm font-semibold capitalize text-primary-100"
+              className="rounded-full bg-gradient-to-tr from-secondary-950 via-secondary-800 to-secondary-600 px-2 py-1 text-sm font-semibold capitalize text-primary-100 sm:px-3 md:px-4"
             >
               {tag}
             </span>
           ))}
         </div>
+
         {project.image && !project.video && (
           <div className="image overflow-hidden md:max-h-[40rem] md:max-w-full">
             <Image
@@ -137,7 +139,7 @@ function Page() {
           </div>
         )}
 
-        <p className="description prose prose-invert my-6 !max-w-none text-justify text-lg font-medium">
+        <p className="description prose prose-invert my-6 !max-w-none text-justify text-base font-medium md:text-lg">
           {project.description}
         </p>
 
@@ -148,7 +150,9 @@ function Page() {
           youtube={youtube}
           github={github}
           live={live}
-          styles={"scale-125 justify-end font-semibold"}
+          styles={
+            "scale-100 md:scale-125 justify-center md:justify-end font-semibold"
+          }
         />
       </div>
     </>

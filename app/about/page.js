@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import PageTransition from "../_components/PageTransition";
 import AboutImage from "../_components/AboutImage";
 import Education from "../_components/sections/Education";
-import Footer from "../_components/sections/Footer";
 
 function Page() {
   const component = useRef();
@@ -140,8 +139,6 @@ function Page() {
         </a>
         <Education />
       </div>
-
-      <Footer />
     </>
   );
 }

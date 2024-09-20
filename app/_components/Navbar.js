@@ -18,7 +18,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed z-30 flex w-full items-center justify-between bg-primary-900/50 px-6 py-4 shadow-md shadow-primary-950/25 md:py-4 lg:px-20">
+    <nav className="fixed z-30 flex w-full items-center justify-between overflow-hidden bg-primary-900/50 px-6 py-4 shadow-md shadow-primary-950/25 md:py-4 lg:px-20">
       {/* Logo on the left */}
       <Link href="/">
         <Image

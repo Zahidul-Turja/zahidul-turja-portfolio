@@ -47,12 +47,12 @@ function Page() {
   }, []);
 
   return (
-    <div ref={content}>
+    <div ref={content} className="mx-auto py-24">
       <PageTransition message="Projects" />
 
-      <div className="mx-10 py-24">
+      <div>
         <h2 className="title text-center text-5xl font-bold">Projects</h2>
-        <div className="list opacity-0">
+        <div className="list mx-auto max-w-[85%] opacity-0">
           <ContentList items={items} pageType={"projects"} yCal={430} />
         </div>
       </div>

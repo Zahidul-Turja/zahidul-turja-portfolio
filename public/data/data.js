@@ -30,23 +30,23 @@ export const BlogDetails = {
     title: "useState in React",
     date: "2022-01-01",
     tags: ["React.js", "Next.js", "Frontend"],
-    image: "/avatar-01.jpg",
+    image: "/avatar-01.jpeg",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
     subs: [
       {
         title: "Para 1",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
         title: "Para 2",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
         title: "Para 3",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
     ],
@@ -61,7 +61,7 @@ export const BlogDetails = {
     subs: [
       {
         title: "Creating the error",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
@@ -70,7 +70,7 @@ export const BlogDetails = {
       },
       {
         title: "Para 3",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
     ],
@@ -78,24 +78,24 @@ export const BlogDetails = {
   "blog-3": {
     title: "React Query",
     tags: ["React.js", "Next.js", "Frontend"],
-    image: "/avatar-01.jpg",
+    image: "/avatar-01.jpeg",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
     date: "2022-01-01",
     subs: [
       {
         title: "Para 1",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
         title: "Para 2",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
         title: "Para 3",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
     ],
@@ -103,24 +103,24 @@ export const BlogDetails = {
   "blog-4": {
     title: "Hooks in React",
     tags: ["React.js", "Next.js", "Frontend"],
-    image: "/avatar-01.jpg",
+    image: "/avatar-01.jpeg",
     description:
       "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
     date: "2022-01-01",
     subs: [
       {
         title: "Para 1",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
         title: "Para 2",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
       {
         title: "Para 3",
-        image: "/avatar-01.jpg",
+        image: "/avatar-01.jpeg",
         para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
       },
     ],

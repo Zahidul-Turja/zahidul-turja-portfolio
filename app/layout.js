@@ -4,6 +4,7 @@ import "@/app/styles/globals.css";
 import StarsCanvas from "./_components/StarsCanvas";
 import Navbar from "./_components/Navbar";
 import InitialAnimation from "./_components/InitialAnimation";
+import Footer from "./_components/sections/Footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 const urbanist = Urbanist({ subsets: ["latin"] });
@@ -24,9 +25,10 @@ export default function RootLayout({ children }) {
         className={`${urbanist.className} min-h-screen overflow-x-hidden overflow-y-scroll bg-primary-950 text-primary-100 antialiased`}
       >
         <InitialAnimation />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

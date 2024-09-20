@@ -105,7 +105,7 @@ function Page() {
     <>
       <PageTransition message={blog.title} />
 
-      <div className="mx-72 px-10 py-24" ref={content}>
+      <div className="px-10 py-24 lg:mx-72" ref={content}>
         <h1 className="title text-4xl font-bold opacity-0">{blog.title}</h1>
         <span className="date block text-sm font-normal text-white">
           {blog.date}

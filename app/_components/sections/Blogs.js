@@ -39,7 +39,7 @@ function Blogs() {
 
   return (
     <section
-      className="mb-16 mt-8 text-center md:mb-32 md:mt-16"
+      className="mx-auto mb-16 mt-8 max-w-[90%] text-center md:mb-32 md:mt-16"
       ref={component}
     >
       <h2 className="title-tech-stack text-3xl font-bold md:text-4xl lg:text-5xl">
