@@ -58,8 +58,8 @@ function Details({ id, title, description, techStack, links }) {
     >
       <h2 className="my-2 text-lg font-bold leading-5">{title}</h2>
       <p className="prose prose-invert text-justify text-sm">
-        {description.slice(0, 200)}{" "}
-        {description.length > 200 ? (
+        {description.slice(0, 250)}{" "}
+        {description.length > 250 ? (
           <span className="font-bold tracking-widest">....</span>
         ) : (
           ""

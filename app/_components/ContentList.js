@@ -119,7 +119,7 @@ function ContentList({ items, pageType, yCal = 160 }) {
               className="flex flex-col justify-between border-t border-t-slate-100 py-6 text-slate-200 md:flex-row md:py-10"
               aria-label={item.title}
             >
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start text-left">
                 <span className="text-2xl font-bold md:text-3xl">
                   {item.title}
                 </span>

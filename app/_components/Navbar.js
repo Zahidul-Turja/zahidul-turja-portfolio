@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-import avatar from "@/public/avatar-03.jpg";
+import avatar from "@/public/avatar-02.jpeg";
 import ButtonSecondary from "./ButtonSecondary";
 
 function Navbar() {

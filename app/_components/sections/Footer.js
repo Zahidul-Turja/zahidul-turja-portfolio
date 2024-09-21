@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 function Footer() {
   return (
@@ -43,7 +44,7 @@ function Footer() {
       </div>
       <div className="socials inline-flex justify-center sm:justify-end">
         <Link
-          href={"https://github.com/Zahidul-Turja"}
+          href={"https://www.linkedin.com/in/zahidul-turja"}
           target="_blank"
           className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-110 hover:text-[#0A66C2]"
         >
@@ -57,11 +58,11 @@ function Footer() {
           <FaGithub />
         </Link>
         <Link
-          href={"https://github.com/Zahidul-Turja"}
+          href={"https://leetcode.com/u/Zahidul_Turja/"}
           target="_blank"
           className="p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-110 hover:text-[#1A8CD8]"
         >
-          <FaTwitter />
+          <SiLeetcode />
         </Link>
       </div>
     </footer>

@@ -1,3 +1,27 @@
+import {
+  FaCss3Alt,
+  FaFigma,
+  FaGoogle,
+  FaHtml5,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
+import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
+import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
+import {
+  SiChakraui,
+  SiDjango,
+  SiExpress,
+  SiGraphql,
+  SiMongodb,
+  SiMysql,
+  SiReactquery,
+  SiSupabase,
+  SiTensorflow,
+} from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
+import { BsStripe } from "react-icons/bs";
+
 export const BlogItems = [
   {
     id: "blog-1",
@@ -190,8 +214,8 @@ export const ProjectItems = [
       github: "https://github.com/Zahidul-Turja/wild-oasis-hotel-management",
       live: "https://wild-oasis-hotel-management.vercel.app/dashboard",
     },
-    techStack: ["React", "Query", "GraphQL", "Supabase"],
-    tags: ["React", "Query", "GraphQL", "Supabase"],
+    techStack: ["React", "ReactQuery", "GraphQL", "Supabase"],
+    tags: ["React", "ReactQuery", "GraphQL", "Supabase"],
   },
   {
     id: "wild-oasis-customer",
@@ -286,11 +310,11 @@ export const Projects = {
     title: "Wild Oasis",
     subtitle: "admin panel of a hotel",
     date: "2022-01-01",
-    tags: ["React", "Query", "GraphQL", "Supabase"],
+    tags: ["React", "ReactQuery", "GraphQL", "Supabase"],
     image: "/project-images/wild-oasis-admin.png",
     video: "https://youtu.be/QokF-RoPCpQ?si=Tze1EIIWny-DcHLk",
     description:
-      "Wild Oasis is a hotel management system, designed to streamline administrative tasks for hotel staff. This web application serves as the admin interface, allowing the receptionist to efficiently add, edit, and delete rooms for customers upon arrival. The system simplifies operations by not requiring online payments, providing a convenient solution for managing bookings. It features multiple filters and sorting options, enabling staff to view room availability over various time periods, such as the last 7 or 90 days.The project was built using React.js for the frontend, React Query for data management, GraphQL, Styled Components for styling, and Supabase for the backend. It was deployed on Vercel, with the backend utilizing the free tier of Supabase. This guided project was developed with the help of online tutorials.",
+      "Wild Oasis is a hotel management system, designed to streamline administrative tasks for hotel staff. This web application serves as the admin interface, allowing the receptionist to efficiently add, edit, and delete rooms for customers upon arrival. The system simplifies operations by not requiring online payments, providing a convenient solution for managing bookings. It features multiple filters and sorting options, enabling staff to view room availability over various time periods, such as the last 7 or 90 days.The project was built using React.js for the frontend, React ReactQuery for data management, GraphQL, Styled Components for styling, and Supabase for the backend. It was deployed on Vercel, with the backend utilizing the free tier of Supabase. This guided project was developed with the help of online tutorials.",
     features: [
       "Supabase authentication for secure admin login.",
       "Full CRUD functionality for managing rooms.",
@@ -299,7 +323,7 @@ export const Projects = {
       "Pagination for easy navigation through data.",
       "Multiple options for sorting and filtering, such as checking room availability over the last 7 or 90 days.",
     ],
-    technologies: ["React", "Query", "GraphQL", "Supabase"],
+    technologies: ["React", "ReactQuery", "GraphQL", "Supabase"],
     links: {
       youtube: "https://youtu.be/QokF-RoPCpQ?si=Tze1EIIWny-DcHLk",
       github: "https://github.com/Zahidul-Turja/wild-oasis-hotel-management",
@@ -331,4 +355,50 @@ export const Projects = {
       live: "https://wild-oasis-for-guest.vercel.app/",
     },
   },
+};
+
+// export const TechIcons = {
+//   Next: <RiNextjsLine className="text-slate-50" />,
+//   React: <FaReact className="text-slate-50" />,
+//   ReactQuery: <SiReactquery className="text-slate-50" />,
+//   Redux: <TbBrandRedux className="text-slate-50" />,
+//   Express: <SiExpress className="text-slate-50" />,
+//   Auth: <FaGoogle className="text-slate-50" />,
+//   GraphQL: <SiGraphql className="text-slate-50" />,
+//   Node: <IoLogoNodejs className="text-slate-50" />,
+//   Mongodb: <SiMongodb className="text-slate-50" />,
+//   Tailwind: <RiTailwindCssFill className="text-slate-50" />,
+//   Chakra: <SiChakraui className="text-slate-50" />,
+//   Supabase: <SiSupabase className="text-slate-50" />,
+//   MySQL: <SiMysql className="text-slate-50" />,
+//   Figma: <FaFigma className="text-slate-50" />,
+//   Django: <SiDjango className="text-slate-50" />,
+//   Python: <FaPython className="text-slate-50" />,
+//   Javascript: <IoLogoJavascript className="text-slate-50" />,
+//   Stripe: <BsStripe className="text-slate-50" />,
+//   HTML: <FaHtml5 className="text-slate-50" />,
+//   CSS: <FaCss3Alt className="text-slate-50" />,
+// };
+
+export const TechIcons = {
+  Next: <RiNextjsLine className="rounded-full bg-slate-50 text-primary-900" />,
+  React: <FaReact className="text-[#5ED3F3]" />,
+  ReactQuery: <SiReactquery className="text-[#FF4154]" />,
+  Redux: <TbBrandRedux className="text-[#7248B6]" />,
+  Express: <SiExpress className="text-primary-50" />,
+  Auth: <FaGoogle className="rounded-full bg-slate-50 text-primary-900" />,
+  GraphQL: <SiGraphql className="text-[#E535AB]" />,
+  Node: <IoLogoNodejs className="text-[#428A3C]" />,
+  MongoDB: <SiMongodb className="text-[#428A3C]" />,
+  Tailwind: <RiTailwindCssFill className="text-[#13B9B3]" />,
+  Chakra: <SiChakraui className="text-[#4FD1C5]" />,
+  Supabase: <SiSupabase className="text-[#2D7555]" />,
+  MySQL: <SiMysql className="text-[#00718B]" />,
+  Figma: <FaFigma className="text-secondary-800" />,
+  Django: <SiDjango className="bg-slate-50 text-[#092D1F]" />,
+  Python: <FaPython className="text-[#366C9C]" />,
+  Javascript: <IoLogoJavascript className="text-[#F7E025]" />,
+  Stripe: <BsStripe className="text-[#685FFF]" />,
+  HTML: <FaHtml5 className="text-[#FF5722]" />,
+  CSS: <FaCss3Alt className="text-[#1C76B8]" />,
 };
