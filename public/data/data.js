@@ -24,11 +24,11 @@ import { BsStripe } from "react-icons/bs";
 
 export const BlogItems = [
   {
-    id: "blog-1",
-    title: "useState in React",
-    tags: ["React.js", "Next.js", "Frontend"],
-    image: "avatar-02.jpeg",
-    imageHover: "avatar-02.jpeg",
+    id: "react-hooks",
+    title: "Popular Hooks in React",
+    tags: ["Hooks", "React.js", "Next.js", "Frontend"],
+    image: "/blog-images/react-hooks/cover-react-hooks.jpg",
+    imageHover: "/blog-images/react-hooks/hover-react-hooks.png",
   },
   {
     id: "blog-2",
@@ -54,28 +54,43 @@ export const BlogItems = [
 ];
 
 export const BlogDetails = {
-  "blog-1": {
-    title: "useState in React",
+  "react-hooks": {
+    title: "Popular Hooks in React",
     date: "2022-01-01",
-    tags: ["React.js", "Next.js", "Frontend"],
-    image: "/avatar-01.jpeg",
+    tags: ["Hooks","React.js", "Next.js", "Frontend"],
+    image: "/blog-images/react-hooks/cover-react-hooks.jpg",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+      "Hooks let you use state and other React features without writing a class. They are a great way to share state between components. Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. Here we'll look at some of the most popular built-in Hooks in React.",
     subs: [
       {
-        title: "Para 1",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "useState Hook", 
+        image: "/blog-images/react-hooks/react-hooks-useState.png",
+        para: "useState hook is one of the State Hooks in react which allows the user to add state to functional components. State lets a component remember information it needs to know and that it should re-render when certain values change. This example shows a simple counter where the state (count) starts at 0 and increments when the button is clicked. setCount is the function to update the state.",
       },
       {
-        title: "Para 2",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "useEffect Hook",
+        image: "/blog-images/react-hooks/react-hooks-useEffect.png",
+        para: "Effects let a component connect to and synchronize with external systems. This includes dealing with network, browser DOM, animations, widgets written using a different UI library, and other non-React code. This example uses useEffect to create a timer that updates every second. The useEffect hook is responsible for starting the timer when the component mounts and cleaning up when it unmounts.",
       },
       {
-        title: "Para 3",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "useContext Hook",
+        image: "/blog-images/react-hooks/react-hooks-useContext.png",
+        para: "Context lets a component receive information from distant parents without passing it as props. For example, your app's top-level component can pass the current UI theme to all components below, no matter how deep. This removes the 'Pop Drilling' problem which can be extrimely annoying. The useContext hook is responsible for passing the theme to the top-level component and works as a Global Provider.Here, in the provided code snippet, useContext provides a user object to deeply nested components (ComponentC) without passing it as a prop through every layer of the component tree.",
+      },
+      {
+        title: "useReducer Hook",
+        image: "/blog-images/react-hooks/react-hooks-useReducer.png",
+        para: "This is another one of the State Hooks in React. useReducer is like useState, but for more complex state logic. It is often used when state transitions depend on more complex actions. useReducer returns an array with exactly two items: the current state which provides as the name suggests, the current value of the state and the dispatch function that lets you change it in response to interections with your application. It is used in combination with the reducer hook. This example uses useReducer to implement a counter. The reducer function manages different actions (increment, decrement) that alter the state.",
+      },
+      {
+        title: "useRef Hook",
+        image: "/blog-images/react-hooks/react-hooks-useRef.png",
+        para: "Refs let a component hold some information that isn't used for rendering, like a DOM node or a timeout ID. Unlike with state, updating a ref does not re-render your component. Refs are an “escape hatch” from the React paradigm. They are useful when you need to work with non-React systems, such as the built-in browser APIs, creating animations etc. In this example, useRef is used to access a DOM element (input) directly, allowing the button to programmatically focus the input field without causing a re-render.",
+      },
+      {
+        title: "useOptimistic Hook",
+        image: "/blog-images/react-hooks/react-hooks-useOptimistic.png",
+        para: "useOptimistic is a React Hook that lets you show a different state while an async action is underway. It accepts some state as an argument and returns a copy of that state that can be different during the duration of an async action such as a network request. You provide a function that takes the current state and the input to the action, and returns the optimistic state to be used while the action is pending. This state is called the “optimistic” state because it is usually used to immediately present the user with the result of performing an action, even though the action actually takes time to complete. Here, useOptimistic is used to update the UI as if an operation has succeeded (e.g., submission), even before the real result from the backend is received.",
       },
     ],
   },
@@ -357,28 +372,28 @@ export const Projects = {
   },
 };
 
-// export const TechIcons = {
-//   Next: <RiNextjsLine className="text-slate-50" />,
-//   React: <FaReact className="text-slate-50" />,
-//   ReactQuery: <SiReactquery className="text-slate-50" />,
-//   Redux: <TbBrandRedux className="text-slate-50" />,
-//   Express: <SiExpress className="text-slate-50" />,
-//   Auth: <FaGoogle className="text-slate-50" />,
-//   GraphQL: <SiGraphql className="text-slate-50" />,
-//   Node: <IoLogoNodejs className="text-slate-50" />,
-//   Mongodb: <SiMongodb className="text-slate-50" />,
-//   Tailwind: <RiTailwindCssFill className="text-slate-50" />,
-//   Chakra: <SiChakraui className="text-slate-50" />,
-//   Supabase: <SiSupabase className="text-slate-50" />,
-//   MySQL: <SiMysql className="text-slate-50" />,
-//   Figma: <FaFigma className="text-slate-50" />,
-//   Django: <SiDjango className="text-slate-50" />,
-//   Python: <FaPython className="text-slate-50" />,
-//   Javascript: <IoLogoJavascript className="text-slate-50" />,
-//   Stripe: <BsStripe className="text-slate-50" />,
-//   HTML: <FaHtml5 className="text-slate-50" />,
-//   CSS: <FaCss3Alt className="text-slate-50" />,
-// };
+export const TechIconsBlackWhite = {
+  Next: <RiNextjsLine className="text-slate-50" />,
+  React: <FaReact className="text-slate-50" />,
+  ReactQuery: <SiReactquery className="text-slate-50" />,
+  Redux: <TbBrandRedux className="text-slate-50" />,
+  Express: <SiExpress className="text-slate-50" />,
+  Auth: <FaGoogle className="text-slate-50" />,
+  GraphQL: <SiGraphql className="text-slate-50" />,
+  Node: <IoLogoNodejs className="text-slate-50" />,
+  Mongodb: <SiMongodb className="text-slate-50" />,
+  Tailwind: <RiTailwindCssFill className="text-slate-50" />,
+  Chakra: <SiChakraui className="text-slate-50" />,
+  Supabase: <SiSupabase className="text-slate-50" />,
+  MySQL: <SiMysql className="text-slate-50" />,
+  Figma: <FaFigma className="text-slate-50" />,
+  Django: <SiDjango className="text-slate-50" />,
+  Python: <FaPython className="text-slate-50" />,
+  Javascript: <IoLogoJavascript className="text-slate-50" />,
+  Stripe: <BsStripe className="text-slate-50" />,
+  HTML: <FaHtml5 className="text-slate-50" />,
+  CSS: <FaCss3Alt className="text-slate-50" />,
+};
 
 export const TechIcons = {
   Next: <RiNextjsLine className="rounded-full bg-slate-50 text-primary-900" />,
