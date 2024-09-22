@@ -11,28 +11,28 @@ function SubPara({ title, para, image, itemsList }) {
   const component = useRef(null);
   const itemsRef = useRef([]);
 
-  useEffect(() => {
-    // Animate list items with a stagger effect
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".title",
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".title",
-            start: "top bottom-=100px",
-            end: "bottom center",
-            toggleActions: "play none none none",
-          },
-        },
-      );
-    }, component);
-    return () => ctx.revert(); // Cleanup
-  }, []);
+  // useEffect(() => {
+  //   // Animate list items with a stagger effect
+  //   let ctx = gsap.context(() => {
+  //     gsap.fromTo(
+  //       ".title",
+  //       { opacity: 0, y: 50 },
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         duration: 0.5,
+  //         ease: "power2.out",
+  //         scrollTrigger: {
+  //           trigger: ".title",
+  //           start: "top bottom-=100px",
+  //           end: "bottom center",
+  //           toggleActions: "play none none none",
+  //         },
+  //       },
+  //     );
+  //   }, component);
+  //   return () => ctx.revert(); // Cleanup
+  // }, []);
 
   return (
     <div className="my-8" ref={component}>
