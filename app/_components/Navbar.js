@@ -18,14 +18,14 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed z-30 flex w-full items-center justify-between overflow-hidden bg-primary-900/50 px-6 py-4 shadow-md shadow-primary-950/25 md:py-4 lg:px-20">
+    <nav className="fixed z-30 flex w-full items-center justify-between overflow-hidden bg-primary-900/70 px-6 py-2 shadow-md shadow-primary-950/25 md:py-4 lg:px-20">
       {/* Logo on the left */}
       <Link href="/">
         <Image
           src={avatar}
           alt="logo"
           placeholder="blur"
-          className="h-10 w-10 cursor-pointer rounded-full border-2 border-primary-300 lg:h-12 lg:w-12"
+          className="h-8 w-8 cursor-pointer rounded-full border-2 border-primary-300 lg:h-12 lg:w-12"
         />
       </Link>
 
@@ -61,7 +61,7 @@ function Navbar() {
 
       {/* Mobile Menu Icon */}
       <div className="flex items-center md:hidden">
-        <button onClick={toggleMenu} className="z-50 text-2xl text-white">
+        <button onClick={toggleMenu} className="z-50 text-3xl text-white">
           {isOpen ? (
             <FaTimes className="my-2 text-primary-900" />
           ) : (

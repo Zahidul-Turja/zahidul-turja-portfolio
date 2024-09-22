@@ -24,7 +24,7 @@ function SubPara({ title, para, image, itemsList }) {
           ease: "power2.out",
           scrollTrigger: {
             trigger: ".title",
-            start: "top bottom+=50px",
+            start: "top bottom-=50px",
             end: "bottom 50%",
             toggleActions: "play none none none",
           },

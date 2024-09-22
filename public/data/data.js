@@ -30,40 +30,40 @@ export const BlogItems = [
     image: "/blog-images/react-hooks/cover-react-hooks.jpg",
     imageHover: "/blog-images/react-hooks/hover-react-hooks.png",
   },
-  {
-    id: "blog-2",
-    title: "Example of A Closure Error in React",
-    tags: ["useState", "React.js", "Closure"],
-    image: "wild-oasis-client.png",
-    imageHover: "wild-oasis-client.png",
-  },
-  {
-    id: "blog-3",
-    title: "React Query",
-    tags: ["React.js", "Next.js", "Tenstack"],
-    image: "avatar-03.jpg",
-    imageHover: "avatar-03.jpg",
-  },
-  {
-    id: "blog-4",
-    title: "Hooks in React",
-    tags: ["React.js", "Next.js", "Hooks"],
-    image: "avatar-01.jpeg",
-    imageHover: "avatar-01.jpeg",
-  },
+  // {
+  //   id: "blog-2",
+  //   title: "Example of A Closure Error in React",
+  //   tags: ["useState", "React.js", "Closure"],
+  //   image: "wild-oasis-client.png",
+  //   imageHover: "wild-oasis-client.png",
+  // },
+  // {
+  //   id: "blog-3",
+  //   title: "React Query",
+  //   tags: ["React.js", "Next.js", "Tenstack"],
+  //   image: "avatar-03.jpg",
+  //   imageHover: "avatar-03.jpg",
+  // },
+  // {
+  //   id: "blog-4",
+  //   title: "Hooks in React",
+  //   tags: ["React.js", "Next.js", "Hooks"],
+  //   image: "avatar-01.jpeg",
+  //   imageHover: "avatar-01.jpeg",
+  // },
 ];
 
 export const BlogDetails = {
   "react-hooks": {
     title: "Popular Hooks in React",
     date: "2022-01-01",
-    tags: ["Hooks","React.js", "Next.js", "Frontend"],
+    tags: ["Hooks", "React.js", "Next.js", "Frontend"],
     image: "/blog-images/react-hooks/cover-react-hooks.jpg",
     description:
       "Hooks let you use state and other React features without writing a class. They are a great way to share state between components. Hooks let you use different React features from your components. You can either use the built-in Hooks or combine them to build your own. Here we'll look at some of the most popular built-in Hooks in React.",
     subs: [
       {
-        title: "useState Hook", 
+        title: "useState Hook",
         image: "/blog-images/react-hooks/react-hooks-useState.png",
         para: "useState hook is one of the State Hooks in react which allows the user to add state to functional components. State lets a component remember information it needs to know and that it should re-render when certain values change. This example shows a simple counter where the state (count) starts at 0 and increments when the button is clicked. setCount is the function to update the state.",
       },

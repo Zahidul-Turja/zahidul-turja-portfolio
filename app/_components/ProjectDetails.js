@@ -7,8 +7,6 @@ import ProjectLinks from "./ProjectLinks";
 import { TechIcons } from "@/public/data/data";
 
 function ProjectDetails({ id, title, description, links, techStack }) {
-  console.log(techStack);
-
   return (
     <div className="hidden min-h-[52vh] w-full rounded-lg bg-primary-900 md:block md:w-[50%]">
       <div className="flex items-center justify-between">
