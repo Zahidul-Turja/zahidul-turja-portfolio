@@ -24,8 +24,8 @@ function SubPara({ title, para, image, itemsList }) {
           ease: "power2.out",
           scrollTrigger: {
             trigger: ".title",
-            start: "top bottom-=50px",
-            end: "bottom 50%",
+            start: "top bottom-=100px",
+            end: "bottom center",
             toggleActions: "play none none none",
           },
         },
@@ -44,7 +44,6 @@ function SubPara({ title, para, image, itemsList }) {
           src={image}
           alt={title}
           placeholder="blur"
-          blurDataURL={image}
           layout="responsive"
           width={20}
           height={20}
