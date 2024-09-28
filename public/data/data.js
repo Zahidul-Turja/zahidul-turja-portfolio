@@ -30,13 +30,13 @@ export const BlogItems = [
     image: "/blog-images/react-hooks/cover-react-hooks.jpg",
     imageHover: "/blog-images/react-hooks/hover-react-hooks.png",
   },
-  // {
-  //   id: "blog-2",
-  //   title: "Example of A Closure Error in React",
-  //   tags: ["useState", "React.js", "Closure"],
-  //   image: "wild-oasis-client.png",
-  //   imageHover: "wild-oasis-client.png",
-  // },
+  {
+    id: "blog-2",
+    title: "Example of A Closure Error in React",
+    tags: ["useState", "React.js", "Closure"],
+    image: "wild-oasis-client.png",
+    imageHover: "wild-oasis-client.png",
+  },
   // {
   //   id: "blog-3",
   //   title: "React Query",
