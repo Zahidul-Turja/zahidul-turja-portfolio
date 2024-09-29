@@ -18,14 +18,15 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed z-30 flex w-full items-center justify-between overflow-hidden bg-primary-900/70 px-6 py-2 shadow-md shadow-primary-950/25 md:py-4 lg:px-20">
+    <nav className="fixed z-30 flex w-full items-center justify-between overflow-hidden bg-primary-900/70 px-6 py-2 shadow-md shadow-primary-950/25 lg:px-20">
       {/* Logo on the left */}
       <Link href="/">
         <Image
           src={avatar}
           alt="logo"
           placeholder="blur"
-          className="h-8 w-8 cursor-pointer rounded-full border-2 border-primary-300 lg:h-12 lg:w-12"
+          quality={70}
+          className="h-8 w-8 cursor-pointer rounded-full border-2 border-primary-300 lg:h-10 lg:w-10"
         />
       </Link>
 

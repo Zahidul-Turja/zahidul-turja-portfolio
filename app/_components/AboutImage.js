@@ -81,8 +81,7 @@ function AboutImage() {
         src={avatar}
         alt="avatar"
         placeholder="blur"
-        blurDataURL="/avatar-01-small.jpg"
-        layout="responsive"
+        quality={90}
         className="avatar-image absolute inset-0 h-full w-full rounded-lg border-[3px] object-cover object-top"
       />
       <div className="highlight absolute inset-0 hidden h-[90%] w-full scale-110 overflow-hidden rounded-lg bg-gradient-to-tr from-transparent via-primary-500 to-transparent opacity-0 md:block"></div>
