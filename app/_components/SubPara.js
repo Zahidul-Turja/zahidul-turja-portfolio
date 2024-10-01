@@ -40,15 +40,18 @@ function SubPara({ title, para, image, itemsList }) {
         {title}
       </h2>
       {image && (
-        <Image
-          src={image}
-          alt={title}
-          placeholder="blur"
-          quality={80}
-          width={20}
-          height={20}
-          className="mx-auto my-6 rounded-lg object-cover object-top md:max-h-[40rem] md:max-w-full"
-        />
+        <div className="aspect-w-16 aspect-h-9">
+          <Image
+            src={image}
+            alt={title}
+            // placeholder="blur"
+            // quality={80}
+            width={20}
+            height={20}
+            layout="responsive"
+            className="mx-auto my-6 rounded-lg object-center md:max-h-[40rem] md:max-w-full"
+          />
+        </div>
       )}
       <p className="para prose prose-invert my-2 !max-w-none text-justify text-lg font-medium">
         {para}
