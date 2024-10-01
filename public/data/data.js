@@ -31,26 +31,19 @@ export const BlogItems = [
     imageHover: "/blog-images/react-hooks/hover-react-hooks.png",
   },
   {
-    id: "blog-2",
+    id: "what-is-rest-api",
+    title: "What is a REST API?",
+    tags: ["React.js", "Next.js", "Tenstack"],
+    image: "/blog-images/what-is-rest-api/what-is-rest-api.png",
+    imageHover: "/blog-images/what-is-rest-api/hover-what-is-rest-api.png",
+  },
+  {
+    id: "closure-usestate",
     title: "Example of A Closure Error in React",
     tags: ["useState", "React.js", "Closure"],
-    image: "wild-oasis-client.png",
-    imageHover: "wild-oasis-client.png",
+    image: "/blog-images/closure-usestate/closure-js.png",
+    imageHover: "/blog-images/closure-usestate/closure-js.png",
   },
-  // {
-  //   id: "blog-3",
-  //   title: "React Query",
-  //   tags: ["React.js", "Next.js", "Tenstack"],
-  //   image: "avatar-03.jpg",
-  //   imageHover: "avatar-03.jpg",
-  // },
-  // {
-  //   id: "blog-4",
-  //   title: "Hooks in React",
-  //   tags: ["React.js", "Next.js", "Hooks"],
-  //   image: "avatar-01.jpeg",
-  //   imageHover: "avatar-01.jpeg",
-  // },
 ];
 
 export const BlogDetails = {
@@ -94,77 +87,71 @@ export const BlogDetails = {
       },
     ],
   },
-  "blog-2": {
+  "closure-usestate": {
     title: "Example of A Closure Error in React",
     tags: ["React.js", "Next.js", "Frontend"],
-    image: "/1-csr-ssr.png",
+    image: "/blog-images/closure-usestate/closure-js.png",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem? lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
-    date: "2022-01-01",
+      "While working on a quantity component for a e-commerce webpage, I faced an issue that if I try to increment of decrement items too fast it would only work once. I found the reason for this type of behaviour and makes a lot of sense when you get to know it. Let's break it down.",
+    date: "2024-03-24",
     subs: [
       {
         title: "Creating the error",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        image: "/blog-images/closure-usestate/problem.png",
+        para: "Here if you focus on the setQuantity function binded with onClick then you'll notice the set function dependes on the quantity variable. What ever the value of this quantity variable is it will just add 1 to this. This happened for a concept known as Closure",
       },
       {
-        title: "Para 2",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "Closure",
+        para: "A closure in JavaScript refers to the combination of a function and the environment in which it was created. More specifically, a closure allows a function to access variables from an outer function's scope, even after the outer function has finished executing. This concept provides powerful capabilities in JavaScript, particularly for managing state, creating private variables, and handling asynchronous code.",
       },
       {
-        title: "Para 3",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
-      },
-    ],
-  },
-  "blog-3": {
-    title: "React Query",
-    tags: ["React.js", "Next.js", "Frontend"],
-    image: "/avatar-01.jpeg",
-    description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
-    date: "2022-01-01",
-    subs: [
-      {
-        title: "Para 1",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "How Closures Work",
+        para: "In JavaScript, functions are first-class citizens, meaning they can be treated like variables, passed around, or returned from other functions. When a function is created, it retains a reference to the variables in its outer scope. Even when the outer function has finished running, the inner function that references these variables still remembers their values. This memory of the surrounding state is what we call a closure.",
       },
       {
-        title: "Para 2",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
-      },
-      {
-        title: "Para 3",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "Creating the error",
+        image: "/blog-images/closure-usestate/solution.png",
+        para: "The solution to this issue here is pretty simple, use the functional update form of setState where you pass a function to setCount. This ensures that the updates are based on the latest value of count.",
       },
     ],
   },
-  "blog-4": {
-    title: "Hooks in React",
-    tags: ["React.js", "Next.js", "Frontend"],
-    image: "/avatar-01.jpeg",
+  "what-is-rest-api": {
+    title: "What is a REST API?",
+    tags: ["APIs", "Backend", "REST", "RESTful"],
+    image: "/blog-images/what-is-rest-api/what-is-rest-api.png",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
-    date: "2022-01-01",
+      "A REST API (also called a RESTful API or RESTful web API) is an application programming interface (API) that conforms to the design principles of the representational state transfer (REST) architectural style. REST APIs provide a flexible, lightweight way to integrate applications and to connect components in microservices architectures.",
+    date: "2023-04-01",
     subs: [
       {
-        title: "Para 1",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "REST design principles",
+        para: "At the most basic level, an API is a mechanism that enables an application or service to access a resource within another application or service. The application or service that accesses resources is the client, and the application or service that contains the resource is the server. Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But developers can develop REST APIs using virtually any programming language and support a variety of data formats. The only requirement is that they align to the following six REST design principles, also known as architectural constraints.",
       },
       {
-        title: "Para 2",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "Uniform interface",
+        para: "All API requests for the same resource should look the same, no matter where the request comes from. The REST API should ensure that the same piece of data, such as the name or email address of a user, belongs to only one uniform resource identifier (URI). Resources shouldn’t be too large but should contain every piece of information that the client might need.  ",
       },
       {
-        title: "Para 3",
-        image: "/avatar-01.jpeg",
-        para: "lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque modi laudantium dignissimos hic quas quos? Nesciunt eius eos nisi quis a omnis tenetur sunt enim, ut itaque! A, voluptatem?",
+        title: "Client-server decoupling",
+        para: "In REST API design, client and server applications must be completely independent of each other. The only information that the client application should know is the URI of the requested resource; it can't interact with the server application in any other ways. Similarly, a server application shouldn't modify the client application other than passing it to the requested data via HTTP.",
+      },
+      {
+        title: "Statelessness",
+        para: "REST APIs are stateless, meaning that each request needs to include all the information necessary for processing it. In other words, REST APIs do not require any server-side sessions. Server applications aren't allowed to store any data related to a client request.",
+      },
+      {
+        title: "Cacheability",
+        para: "When possible, resources should be cacheable on the client or server side. Server responses also need to contain information about whether caching is allowed for the delivered resource. The goal is to improve performance on the client side, while increasing scalability on the server side.",
+      },
+      {
+        title: "How REST APIs work",
+        para: `REST APIs communicate through HTTP requests to perform standard database functions like creating, reading, updating and deleting records (also known as CRUD) within a resource.
+
+        For example, a REST API would use a GET request to retrieve a record. A POST request creates a new record. A PUT request updates a record, and a DELETE request deletes one. All HTTP methods can be used in API calls. A well-designed REST API is similar to a website running in a web browser with built-in HTTP functionality.
+
+        The state of a resource at any particular instant, or timestamp, is known as the resource representation. This information can be delivered to a client in virtually any format including JavaScript Object Notation (JSON), HTML, XLT, Python, PHP or plain text. JSON is popular because it's readable by both humans and machines—and it is programming language-agnostic.
+
+        Request headers and parameters are also important in REST API calls because they include important identifier information such as metadata, authorizations, uniform resource identifiers (URIs), caching, cookies and more. Request headers and response headers, along with conventional HTTP status codes, are used within well-designed REST APIs.`,
       },
     ],
   },

@@ -44,7 +44,7 @@ function SubPara({ title, para, image, itemsList }) {
           src={image}
           alt={title}
           placeholder="blur"
-          layout="responsive"
+          quality={80}
           width={20}
           height={20}
           className="mx-auto my-6 rounded-lg object-cover object-top md:max-h-[40rem] md:max-w-full"

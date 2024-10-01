@@ -7,6 +7,8 @@ function ProjectImage({ image }) {
       <Image
         src={image}
         fill
+        placeholder="blur"
+        quality={80}
         className="rounded-lg object-cover"
         alt="project-cover"
       />
