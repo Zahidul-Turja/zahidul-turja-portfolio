@@ -109,7 +109,7 @@ export const BlogDetails = {
         para: "In JavaScript, functions are first-class citizens, meaning they can be treated like variables, passed around, or returned from other functions. When a function is created, it retains a reference to the variables in its outer scope. Even when the outer function has finished running, the inner function that references these variables still remembers their values. This memory of the surrounding state is what we call a closure.",
       },
       {
-        title: "Creating the error",
+        title: "Solution",
         image: "/blog-images/closure-usestate/solution.png",
         para: "The solution to this issue here is pretty simple, use the functional update form of setState where you pass a function to setCount. This ensures that the updates are based on the latest value of count.",
       },
