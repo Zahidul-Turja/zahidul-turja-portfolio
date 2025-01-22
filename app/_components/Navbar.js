@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <nav className="fixed z-30 flex w-full items-center justify-between overflow-hidden bg-primary-900/70 px-6 py-2 shadow-md shadow-primary-950/25 lg:px-20">
       {/* Logo on the left */}
-      <Link href="/">
+      <Link href="/" className="flex items-center gap-3">
         <Image
           src={avatar}
           alt="logo"
@@ -28,6 +28,14 @@ function Navbar() {
           quality={70}
           className="h-8 w-8 cursor-pointer rounded-full border-2 border-primary-300 lg:h-10 lg:w-10"
         />
+        <div>
+          <span className="-mb-2 flex flex-col text-lg font-bold tracking-wider text-white">
+            Zahidul I. Turja
+          </span>
+          <span className="text-xs font-extralight tracking-wider text-white/60">
+            Fullstack Software Engineer
+          </span>
+        </div>
       </Link>
 
       {/* Desktop Menu */}

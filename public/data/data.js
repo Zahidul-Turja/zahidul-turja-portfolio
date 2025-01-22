@@ -159,6 +159,21 @@ export const BlogDetails = {
 
 export const ProjectItems = [
   {
+    id: "mimic",
+    title: "Mimic - A Multipurpose Web Application",
+    image: "/project-images/mimic.png",
+    imageHover: "/project-images/hover-mimic.png",
+    description:
+      "A multi-purpose web application built with Next.js to showcase diverse features and functionalities, including e-commerce, media galleries, Harry Potter content, and more. This project demonstrates my skills in modular design, dynamic routing, API integration, and responsive UI development.",
+    links: {
+      youtube: "https://youtu.be/t7cI3hTcEy8",
+      github: "https://github.com/Zahidul-Turja/mimic",
+      live: "https://mimic-plum.vercel.app/",
+    },
+    techStack: ["Javascript", "Next", "Tailwind"],
+    tags: ["Javascript", "Next", "Tailwind"],
+  },
+  {
     id: "dev-edu",
     title: "DevEdu - an educational platform for developers",
     image: "/project-images/devedu.png",
@@ -237,6 +252,31 @@ export const ProjectItems = [
 ];
 
 export const Projects = {
+  mimic: {
+    title: "Mimic",
+    subtitle: "A Multipurpose Web Application",
+    date: "2024-12-13",
+    tags: ["Javascript", "Next", "Tailwind"],
+    image: "/project-images/devedu.png",
+    video: "https://youtu.be/t7cI3hTcEy8",
+    description:
+      "A multi-purpose web application built with Next.js to showcase diverse features and functionalities, including e-commerce, media galleries, Harry Potter content, and more. This project demonstrates my skills in modular design, dynamic routing, API integration, and responsive UI development.",
+    features: [
+      "Image gallery build with Pexels Free Developer API",
+      "E Commerce simulation",
+      "Food recipes from different cuisines",
+      "Harry Potter",
+      "Social page simulation",
+      "Page for motivational quotes",
+    ],
+    technologies: ["React.js", "Next.js", "Frontend"],
+    links: {
+      youtube: "https://youtu.be/t7cI3hTcEy8",
+      github: "https://github.com/Zahidul-Turja/mimic",
+      live: "https://mimic-plum.vercel.app/",
+    },
+  },
+
   "dev-edu": {
     title: "DevEdu",
     subtitle: "an educational platform for developers",

@@ -132,9 +132,9 @@ function Page() {
             Resume
             <MdArrowOutward className="ml-1 inline" />
           </span>
-          <span className="absolute inset-0 -z-10 flex h-full w-full translate-y-10 items-center justify-center rounded-lg bg-gradient-to-tr from-yellow-600 via-yellow-400 to-yellow-300 text-center transition-all duration-300 group-hover:translate-y-0">
+          <span className="absolute inset-0 -z-10 flex h-full w-full translate-y-10 items-center justify-center rounded-lg bg-gradient-to-tr from-yellow-600 via-yellow-400 to-yellow-300 text-center text-primary-950 transition-all duration-300 group-hover:translate-y-0">
             Download
-            <MdOutlineFileDownload className="ml-1 inline h-6 w-6 text-primary-950" />
+            <MdOutlineFileDownload className="ml-1 inline h-6 w-6 text-primary-950 transition-all duration-300" />
           </span>
         </a>
         <Education />
