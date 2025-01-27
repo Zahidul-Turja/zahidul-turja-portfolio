@@ -29,11 +29,11 @@ function Navbar() {
           className="h-8 w-8 cursor-pointer rounded-full border-2 border-primary-300 lg:h-10 lg:w-10"
         />
         <div>
-          <span className="-mb-2 flex flex-col text-lg font-bold tracking-wider text-white">
+          <span className="-mb-2 flex flex-col text-sm font-bold tracking-wider text-white md:text-lg">
             Zahidul I. Turja
           </span>
           <span className="text-xs font-extralight tracking-wider text-white/60">
-            Fullstack Software Engineer
+            Software Engineer
           </span>
         </div>
       </Link>

@@ -52,7 +52,7 @@ function Page() {
 
       <div>
         <h2 className="title text-center text-5xl font-bold">Blogs</h2>
-        <div className="list mx-auto max-w-[85%] opacity-0">
+        <div className="list mx-auto max-w-[90%] opacity-0 md:max-w-[85%]">
           <ContentList items={items} pageType={"blogs"} yCal={400} />
         </div>
       </div>

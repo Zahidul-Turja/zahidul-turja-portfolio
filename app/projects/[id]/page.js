@@ -108,7 +108,7 @@ function Page() {
     <>
       <PageTransition message={project.title} />
 
-      <div className="px-10 py-24 lg:mx-72" ref={content}>
+      <div className="px-5 py-20 md:px-10 md:py-24 lg:mx-72" ref={content}>
         {project.video && <VideoPlayer video={project.video} />}
         <h1 className="title text-xl font-bold md:text-4xl">
           {project.title} - {project.subtitle}
