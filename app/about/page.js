@@ -94,10 +94,13 @@ function Page() {
     <>
       <PageTransition message="About" />
 
-      <div ref={component} className="overflow-x-hidden px-10 py-24 lg:mx-72">
+      <div
+        ref={component}
+        className="overflow-x-hidden px-5 py-16 md:px-10 md:py-24 lg:mx-72"
+      >
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-5 lg:gap-24 lg:gap-y-32">
           <div className="col-span-1 sm:col-span-2 lg:col-span-3">
-            <h1 className="about-title text-4xl font-bold capitalize sm:text-5xl">
+            <h1 className="about-title text-4xl font-bold capitalize md:text-5xl">
               About
             </h1>
             <p className="skills bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text font-light text-transparent">
@@ -123,7 +126,7 @@ function Page() {
         </div>
 
         <a
-          className="resume-btn group relative inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg px-6 py-2 text-xl font-semibold opacity-0 transition-all hover:text-primary-900"
+          className="resume-btn group relative mt-4 inline-block translate-y-4 cursor-pointer overflow-hidden rounded-lg px-6 py-2 text-xl font-semibold opacity-0 transition-all hover:text-primary-900 md:mt-0"
           target="_blank"
           href="/zahidul-turja.pdf"
           download={"zahidul-turja.pdf"}

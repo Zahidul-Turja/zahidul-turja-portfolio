@@ -55,7 +55,7 @@ function Education() {
 
   return (
     <div className="my-12" ref={component}>
-      <h1 className="title my-10 text-5xl font-bold capitalize opacity-0">
+      <h1 className="title my-10 text-4xl font-bold capitalize opacity-0 md:text-5xl">
         Education
       </h1>
 

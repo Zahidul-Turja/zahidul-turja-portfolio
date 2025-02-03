@@ -73,7 +73,7 @@ function AboutImage() {
 
   return (
     <div
-      className="avatar relative -z-10 col-span-1 my-4 h-[26rem] w-full overflow-hidden rounded-lg sm:col-span-2 sm:my-8 sm:h-[60%] md:h-[40rem] lg:h-[80%] lg:-rotate-3"
+      className="avatar relative -z-10 col-span-1 my-0 h-[26rem] w-full overflow-hidden rounded-lg sm:col-span-2 sm:h-[60%] md:my-4 md:h-[40rem] lg:h-[80%] lg:-rotate-3"
       ref={component}
       style={{ transformStyle: "preserve-3d" }}
     >
