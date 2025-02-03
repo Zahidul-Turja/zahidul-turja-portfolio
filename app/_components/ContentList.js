@@ -102,7 +102,10 @@ function ContentList({ items, pageType, yCal = 160 }) {
   }, [items]);
 
   return (
-    <div ref={component} className="-z-10 mx-auto my-16 w-full md:w-[80%]">
+    <div
+      ref={component}
+      className="-z-10 mx-auto my-10 w-full md:my-16 md:w-[80%]"
+    >
       <ul
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
