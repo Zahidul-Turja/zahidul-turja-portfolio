@@ -96,7 +96,7 @@ function Page() {
 
       <div
         ref={component}
-        className="overflow-x-hidden px-5 py-16 md:px-10 md:py-24 lg:mx-72"
+        className="overflow-x-hidden px-5 py-16 md:px-10 md:py-24 lg:mx-40"
       >
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-5 lg:gap-24 lg:gap-y-32">
           <div className="col-span-1 sm:col-span-2 lg:col-span-3">
@@ -107,19 +107,26 @@ function Page() {
               Programmer | Web-developer | Designer
             </p>
             <p className="about-text prose prose-lg prose-slate prose-invert my-4 max-w-full text-justify leading-7 sm:prose-xl sm:leading-8">
-              Hey 👋! This is Zahidul Islam Turja, a recent graduate of the
-              Computer Science and Engineering program at East West University,
-              Dhaka, Bangladesh. I specialize in full-stack web development with
-              MERN and have knowledge about Django as well. I enjoy the creative
-              process of turning ideas into functional and user-friendly
-              interfaces. Whether it&apos;s crafting elegant front-end designs
-              or architecting robust back-end systems.
+              Hey there 👋! I&apos;m Zahidul Islam Turja, a recent Computer
+              Science and Engineering graduate from East West University, Dhaka,
+              Bangladesh. Currently, I&apos;m working as a Junior Backend
+              Developer specializing in Django, where I&apos;m enhancing my
+              skills in building APIs using Django Rest Framework (DRF), task
+              automation, scheduling, deployment, and integrating scalable
+              backend solutions.
               <br />
               <br />
-              Currently seeking opportunities to apply and further develop my
-              skills in a dynamic and collaborative environment. Let&apos;s
-              connect and explore how we can work together to bring exciting
-              projects to life!
+              With a solid foundation in full-stack web development (MERN stack)
+              and practical experience in Django and Docker, I excel at
+              transforming innovative ideas into functional, user-centric
+              systems. I am particularly passionate about crafting efficient,
+              maintainable software solutions while delivering seamless user
+              experiences.
+              <br />
+              I&apos;m always eager to learn, collaborate, and tackle
+              challenging projects that drive growth and innovation. Let&apos;s
+              connect and explore how we can create impactful solutions
+              together!
             </p>
           </div>
           <AboutImage className="avatar h-40 w-40 sm:h-60 sm:w-60 lg:h-full lg:w-full" />
