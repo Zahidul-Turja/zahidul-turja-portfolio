@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import PageTransition from "../_components/PageTransition";
 import AboutImage from "../_components/AboutImage";
 import Education from "../_components/sections/Education";
+import Experience from "../_components/sections/Experience";
 
 function Page() {
   const component = useRef();
@@ -147,6 +148,7 @@ function Page() {
             <MdOutlineFileDownload className="ml-1 inline h-6 w-6 text-primary-950 transition-all duration-300" />
           </span>
         </a>
+        <Experience />
         <Education />
       </div>
     </>

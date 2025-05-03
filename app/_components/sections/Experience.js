@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Education() {
+function Experience() {
   const component = useRef(null);
   const itemRef = useRef([]);
 
@@ -54,9 +54,9 @@ function Education() {
   }, []);
 
   return (
-    <div className="mb-12 mt-32" ref={component}>
+    <div className="my-12" ref={component}>
       <h1 className="title my-10 text-4xl font-bold capitalize opacity-0 md:text-5xl">
-        Education
+        Experience
       </h1>
 
       <ul className="grid border-b border-b-slate-100">
@@ -65,11 +65,15 @@ function Education() {
           ref={(el) => (itemRef.current[0] = el)}
         >
           <div>
-            <h2 className="text-3xl font-bold">B.Sc. in Computer Science</h2>
-            <h3 className="text-sm">East West University, Dhaka, Bangladesh</h3>
+            <h2 className="text-3xl font-bold">
+              Jr. Backend Developer (Django/DRF)
+            </h2>
+            <h3 className="text-sm">
+              EWN Bangladesh Limited, Gulshan, Dhaka, Bangladesh
+            </h3>
           </div>
           <p className="text-normal italic text-yellow-400">
-            January, 2020 - September, 2024
+            March, 2025 - Present
           </p>
         </li>
 
@@ -78,13 +82,15 @@ function Education() {
           ref={(el) => (itemRef.current[1] = el)}
         >
           <div>
-            <h2 className="text-3xl font-bold">HSC in Science</h2>
+            <h2 className="text-3xl font-bold">
+              Intern Backend Developer (Django/DRF)
+            </h2>
             <h3 className="text-sm">
-              Brahman Baria Govt. Collage, Brahman Baria, Bangladesh
+              EWN Bangladesh Limited, Gulshan, Dhaka, Bangladesh
             </h3>
           </div>
           <p className="text-normal italic text-yellow-400">
-            September, 2017 - June, 2019
+            November, 2024 - February, 2025
           </p>
         </li>
       </ul>
@@ -92,4 +98,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default Experience;
