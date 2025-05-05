@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer
       id="contact"
-      className="container mx-auto flex w-full flex-col items-center justify-between gap-8 bg-gray-950 px-[10vw] py-16 sm:flex-row md:gap-6 md:py-24"
+      className="w-screen mx-auto flex w-full flex-col items-center justify-between gap-8 bg-gray-950 px-[10vw] py-16 sm:flex-row md:gap-6 md:py-24"
     >
       <h2 className="text-3xl font-extrabold">Zahidul Turja</h2>
 
