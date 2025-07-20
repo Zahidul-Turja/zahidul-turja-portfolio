@@ -159,6 +159,37 @@ export const BlogDetails = {
 
 export const ProjectItems = [
   {
+    id: "ghorkhojee",
+    title: "Ghor Khojee - Rental Service Platform",
+    image: "/project-images/ghor-khojee-main.png",
+    imageHover: "/project-images/ghor-khojee-hover.png",
+    description:
+      "Ghor Khoje is a modern and responsive property rental platform in Bangladesh. This is the frontend portion of the application built with Next.js, Tailwind CSS, Zustand, and Recharts, aimed at providing a seamless and interactive user experience.",
+    links: {
+      youtube: "https://youtu.be/EmxuM0I8PjU",
+      github: "https://github.com/Zahidul-Turja/ghor-khoje-frontend",
+      live: "https://ghor-khojee.vercel.app/",
+    },
+    techStack: [
+      "Python",
+      "Django",
+      "DRF",
+      "WebSocket",
+      "Javascript",
+      "Next",
+      "Tailwind",
+    ],
+    tags: [
+      "Python",
+      "Django",
+      "DRF",
+      "WebSocket",
+      "Javascript",
+      "Next",
+      "Tailwind",
+    ],
+  },
+  {
     id: "mimic",
     title: "Mimic - A Multipurpose Web Application",
     image: "/project-images/mimic.png",
@@ -252,6 +283,43 @@ export const ProjectItems = [
 ];
 
 export const Projects = {
+  ghorkhojee: {
+    title: "Ghor Khojee",
+    subtitle: "A Multipurpose Web Application",
+    date: "2024-12-13",
+    tags: ["Javascript", "Next", "Tailwind"],
+    image: "/project-images/ghor-khojee-main.png",
+    video: "https://youtu.be/EmxuM0I8PjU",
+    description:
+      "Ghor Khoje is a modern and responsive property rental platform in Bangladesh. This is the frontend portion of the application built with Next.js, Tailwind CSS, Zustand, and Recharts, aimed at providing a seamless and interactive user experience.",
+    features: [
+      "Authentication & Authorization",
+      "OTP Verification with email",
+      "Chat and message system",
+      "Custome admin panel for hosts",
+      "Application process for hosts",
+      "Advanced search filters",
+      "Graphical analytics for host",
+      "Location mapping and calendar integration",
+      "Reviews and ratings",
+      "Feedback system",
+      "Dark & light theme",
+    ],
+    technologies: [
+      "Python",
+      "Django",
+      "DRF",
+      "WebSocket",
+      "React.js",
+      "Next.js",
+      "Frontend",
+    ],
+    links: {
+      youtube: "https://youtu.be/EmxuM0I8PjU",
+      github: "https://github.com/Zahidul-Turja/ghor-khoje-frontend",
+      live: "https://ghor-khojee.vercel.app/",
+    },
+  },
   mimic: {
     title: "Mimic",
     subtitle: "A Multipurpose Web Application",
